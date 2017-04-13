@@ -1,0 +1,27 @@
+{
+  "name": "frontend-edograd",
+  "version": "1.0.0",
+  "homepage": "git@github.com:paul0id/edograd-frontend.git",
+  "authors": [
+    "Pure <paulo@pure-studio.ru>"
+  ],
+  "description": "frontend-edograd",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*",
+    "bootstrap-css": "^3.3.7"
+  },
+  "main": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
