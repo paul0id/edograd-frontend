@@ -12,8 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "3.*",
-    "bootstrap-css": "^3.3.7"
+    "jquery": "3.*"
   },
   "main": "",
   "private": true,
