@@ -116,6 +116,78 @@ a {
 	}
 } // main-header
 
+
+// *********************************** Partners grid
+
+.partners-grid {
+
+	.partner-item {
+		margin-bottom: 50px;
+		background: #fff;
+
+		.partner-item-logo {
+			text-align: center;
+			.partner-item-logo-image {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		.partner-item-title {
+		    font-size: 1.28em;
+		    font-weight: bold;
+		    margin: 23px 0 0;
+		    display: inline-block;
+		}
+
+		.partner-item-kitchen-bar {
+			font-size: 1.11em;
+			margin: 1px 0;
+			font-style: italic;
+		}
+
+		.partner-item-features {
+			margin: 14px 25% 0 0;
+
+			.feauture-image {
+				height: 27px;
+				margin-bottom: 9px;
+			}
+			.feature-title {
+				font-size: 0.9em;
+				margin-bottom: 3px;
+			}
+			.feature-value {
+				font-size: 1.2em;
+				letter-spacing: 0.08em;
+				font-weight: bold;
+			}
+			.feature-title {
+				font-size: 0.9em;
+			}
+			.feature-value {
+				font-size: 1em;
+				font-weight: bold;
+			}
+		} // partner-item-features
+		.partner-item-rating {
+			margin-top: 48px;
+			font-style: italic;
+			.rating-title {
+				display: block;
+				font-size: 1.2em;
+			}
+			.rating-stars {
+				display: block;
+			}
+			.rating-count {
+				font-size: 1em;
+			}
+		} // partner-header-rating
+
+	} // partner-item
+} // partners-grid
+
 // *********************************** Partner page
 
 .partner-header {
@@ -304,7 +376,7 @@ a {
 // ************************************* main-sidebar
 .main-sidebar {
 	.category-nav {
-		margin: 0;
+		margin: 21px 20px;
 		padding: 0;
 		list-style-type: none;
 		.category-nav-item {
@@ -348,6 +420,56 @@ a {
 
 		} // category-nav-item
 	} // category-nav
+
+	.filter-panel-header {
+    margin-top: 13px;
+		overflow: hidden;
+		.filter-panel-title {
+			width: 50%;
+			text-align: center;
+			float: left;
+	    font-size: 1.2em;
+		}
+		.filter-panel-reset {
+			width: 50%;
+			text-align: center;
+			float: left;
+			.reset-btn {
+				margin-top: 2px;
+				cursor: pointer;
+				border-bottom: 1px dashed #777;
+		    font-size: 0.87em;
+				color: #777;
+			}
+		} // filter-panel-reset
+	} // filter-panel-header
+	.filter-panel {
+		list-style-type: none;
+		margin: 7px 0 0;
+		padding: 0;
+		.filter-panel-item {
+			margin: 0;
+			padding: 0;
+			.filter-panel-checkbox {
+				margin-right: 2px;
+			}
+			.filter-panel-label {
+				font-style: italic;
+		    font-size: 1.09em;
+		    margin: 0 0 15px;
+			}
+		} // filter-panel-item
+	} // filter-panel
+	.filter-panel-footer {
+		margin: 14px 0 14px 20px;
+		.look_all-link {
+			font-weight: bold;
+			font-size: 1.2em;
+		}
+		.count-info {
+			font-size: 1.14em;
+		}
+	} // filter-panel-footer
 }
 
 
@@ -382,7 +504,7 @@ a {
 		} // btn-1_2
 	} // panel-white-tabs-buttons
 	.panel-white-body {
-		padding: 36px 35px;
+		padding: 15px;
 	} // panel-white-body
 } // panel-white
 
@@ -470,6 +592,41 @@ a {
   	clear: both;
 	}
 }
+hr {
+	border-color: #db3f31;
+	margin: 10px 0 20px;
+}
+
+// ****************************** Banners
+
+.banner-panel {
+	padding: 100px 0 85px;
+	color: #fff;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.banner-panel-title {
+		margin: 0 0 19px;
+    font-size: 2.6em;
+	}
+	.banner-panel-text {
+		font-size: 1.7em;
+    font-weight: normal;
+    margin: 0 0 29px;
+	}
+	.banner-panel-btn {
+		color: #fff;
+		border-color: #fff;
+		font-size: 1.6em;
+    padding: 7px 26px;
+
+		&:hover {
+			background: #fff;
+			color: #010101;
+		}
+	}
+} // banner-panel
 
 
 // **************************** GRID

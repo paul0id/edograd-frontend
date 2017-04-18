@@ -1,0 +1,36 @@
+//= template/head.html
+
+<div class="container">
+	<div class="row">
+		<div class="col span_2_of_10">
+			//= template/partner-page/partners-sidebar.html
+		</div>
+		<div class="col span_8_of_10">
+			<!-- product-grid -->
+			<div class="partners-grid">
+				<!-- product-grid>row -->
+				<div class="row">
+					//= template/loops/partner-item.html
+					//= template/loops/partner-item.html
+					//= template/loops/partner-item.html
+					//= template/loops/partner-item.html
+				</div>
+				<!-- product-grid>row end -->
+			</div>
+			<!-- product-grid end -->
+		</div>
+	</div>
+</div>
+
+<div class="banner-panel" style="background-image: url(/public/bg_image_001.png);">
+	<div class="container">
+		<h1 class="banner-panel-title">
+			Увеличим количество заказов <br>
+			ваших блюд и продуктов!
+		</h1>
+		<p class="banner-panel-text">Есть заведение? Станьте частью платформы</p>
+		<div class="btn btn-default banner-panel-btn">Присоедениться</div>
+	</div>
+</div>
+
+//= template/footer.html
