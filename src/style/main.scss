@@ -273,6 +273,9 @@ a {
 
 } // partner-header
 
+
+// ******************************* Products
+
 .product-grid {
 
 	.partner-title {
@@ -373,10 +376,88 @@ a {
 	} // product-item
 } // product-grid
 
+
+// ************************************* Lunches
+
+.lunch-grid {
+
+	.lunch-item {
+		background: #fff;
+		margin-bottom: 30px;
+		height: 300px;
+
+		.lunch-item-title {
+			font-size: 1.7em;
+			padding: 21px 33px 0;
+
+		}
+		.lunch-item-partner {
+  	  font-size: 1.15em;
+			padding: 0 33px 14px;
+		}
+		.lunch-item-content {
+			margin: 0 0 0 33px;
+			height: 188px;
+			overflow: hidden;
+		}
+		.lunch-item-image-box {
+			text-align: center;
+			height: 300px;
+			overflow: hidden;
+			.lunch-item-image {
+				width: 100%;
+			}
+		} // lunch-item-image-box
+		.lunch-item-price-box {
+			margin-top: 25px;
+			.lunch-item-price-title {
+				font-size: 0.9em;
+				    font-style: italic;
+				    letter-spacing: 0.05em;
+			}
+			.lunch-item-price {
+				font-size: 1.3em;
+				font-weight: bold;
+			}
+		} // lunch-item-price-box
+		.lunch-item-delivery-box {
+			margin-top: 25px;
+			.lunch-item-delivery-title {
+				font-size: 0.9em;
+				    font-style: italic;
+				    letter-spacing: 0.05em;
+			}
+			.lunch-item-delivery {
+				font-size: 1em;
+				font-weight: bold;
+			}
+		} // lunch-item-delivery-box
+		.lunch-buttons {
+			margin-top: 46px;
+			.lunch-buttons-title {
+				font-style: italic;
+				font-size: 0.8em;
+				margin-bottom: 6px;
+			}
+			.addtocart-count {
+				width: 100%;
+				padding: 7px 23px;
+				margin-bottom: 10px;
+				text-align: center;
+				outline: none;
+				border: 1px solid #474747;
+			}
+			.btn-addtocart {
+				width: 100%;
+			}
+		} // product-buttons
+	} // lunch-item
+} // lunch-grid
+
 // ************************************* main-sidebar
 .main-sidebar {
 	.category-nav {
-		margin: 21px 20px;
+		margin: 21px 12px;
 		padding: 0;
 		list-style-type: none;
 		.category-nav-item {
@@ -445,7 +526,7 @@ a {
 	} // filter-panel-header
 	.filter-panel {
 		list-style-type: none;
-		margin: 7px 0 0;
+		margin: 7px 3px 0;
 		padding: 0;
 		.filter-panel-item {
 			margin: 0;
