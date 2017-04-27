@@ -683,6 +683,9 @@ a {
 			.category-nav-item-count {
 				// font-size: 0.8em;
 			}
+			.sub-category-nav {
+				display: none;
+			}
 			&.active {
 				color: #db3f31;
 				.category-nav-link {
@@ -690,6 +693,7 @@ a {
 					text-decoration: none;
 				}
 				.sub-category-nav {
+					display: block;
 					margin: 12px 0 0;
 					padding: 0;
 					list-style-type: none;
