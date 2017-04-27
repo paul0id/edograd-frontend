@@ -1,4 +1,7 @@
-/** Third Party */
+// ** Variables **
+$image_path: '/img/';
+
+// ** Third Party **
 @import "../../bower_components/normalize.css/normalize";
 @import "./grid/col";
 @import "./grid/2cols";
@@ -14,9 +17,6 @@
 @import "./grid/12cols";
 @import "./libs/slick";
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
-/** Custom */
-@import "partials/variable";
 
 body {
 	font-family: 'PT Sans', sans-serif;
@@ -140,7 +140,7 @@ a {
 				background: transparent;
 				border: 0;
 				outline: none;
-				background-image: url('/img/icons/main-slider-arr.png');
+				background-image: url('#{$image_path}icons/main-slider-arr.png');
 				background-repeat: no-repeat;
 		    background-position: center center;
 				left: 50%;
@@ -602,7 +602,7 @@ a {
 
 .main-offers {
 	background-color: #c34034;
-	background-image: url('/img/bg/panel-bg-001.jpg');
+	background-image: url('#{$image_path}bg/panel-bg-001.jpg');
 	background-position: center center;
 	color: #fff;
 	padding: 69px 0 45px;
@@ -779,7 +779,7 @@ a {
 	top: 160px;
 	width: 100%;
 	height: 420px;
-	background: url('../img/bg/panel-bg-002.jpg') 0 0 no-repeat;
+	background: url('#{$image_path}bg/panel-bg-002.jpg') 0 0 no-repeat;
 	background-size: cover;
 	z-index: -1;
 }
@@ -823,7 +823,7 @@ a {
 	font-size: 1.3em;
 	line-height: 1.7em;
   margin: 0 0 66px;
-	background: url('../img/icons/cart-big.png') 0 5px no-repeat;
+	background: url('#{$image_path}icons/cart-big.png') 0 5px no-repeat;
 	.cart-counter-active {
 
 	}
@@ -905,7 +905,7 @@ a {
 	    display: inline-block;
 	    width: 1.4em;
 	    height: 1.4em;
-	    background: url(/img/icons/close-btn.png) 0 0 no-repeat;
+	    background: url(#{$image_path}icons/close-btn.png) 0 0 no-repeat;
 	    background-size: cover;
 		} // close-btn
 	} // order-action-btns
