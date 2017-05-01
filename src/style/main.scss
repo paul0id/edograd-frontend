@@ -783,6 +783,42 @@ a {
 	background-size: cover;
 	z-index: -1;
 }
+.order-bg-panel {
+	position: absolute;
+	top: 160px;
+	width: 100%;
+	height: 420px;
+	background: url('#{$image_path}bg/panel-bg-003.jpg') 0 0 no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+
+// ************************************* Order
+
+.oder-form {
+  margin-top: 8px;
+}
+
+// Forms
+.form {
+	.form-row {
+		margin-bottom: 26px;
+		.form-label {
+			font-size: 1.3em;
+	    margin-right: 8px;
+	    margin-top: 10px;
+		}
+		.form-field {
+			width: 100%;
+	    padding: 6px 9px;
+	    font-size: 1.3em;
+			outline: none;
+			border: 1px solid #000;
+		}
+
+	} // form-row
+} // form
+
 
 // ************************************* Sidebar
 
@@ -915,7 +951,18 @@ a {
 			display: inline-block;
 			float: right;
 			font-size: 1.5em;
-	    padding: 7px 33px 3px;
+	    padding: 7px 23px 3px;
+		}
+		.order-payment-btn {
+			display: inline-block;
+			float: right;
+			margin-right: 5%;
+			font-size: 1.5em;
+	    padding: 7px 15px 3px;
+			background: #feda5a;
+			color: #000;
+			border-color: #feda5a;
+			letter-spacing: -0.014em;
 		}
 		.order-coast {
 			font-size: 1.5em;
@@ -923,6 +970,13 @@ a {
 	    margin: 9px 0px 0;
 		}
 	} // order-footer
+
+	.order-date {
+	  margin-top: 22px;
+	  text-align: left;
+	  margin-left: 25%;
+	  line-height: 1.3em;
+	}
 
 } // order
 
