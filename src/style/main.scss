@@ -774,6 +774,9 @@ a {
 
 // ************************************* Bg panels
 
+.bg-offset {
+	margin-top: 420px;
+}
 .cart-bg-panel {
 	position: absolute;
 	top: 160px;
@@ -789,6 +792,15 @@ a {
 	width: 100%;
 	height: 420px;
 	background: url('#{$image_path}bg/panel-bg-003.jpg') 0 0 no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.profile-bg-panel {
+	position: absolute;
+	top: 160px;
+	width: 100%;
+	height: 420px;
+	background: url('#{$image_path}bg/panel-bg-004.jpg') 0 0 no-repeat;
 	background-size: cover;
 	z-index: -1;
 }
@@ -849,6 +861,22 @@ a {
 	}
 	.btn-caption {
     margin: 15px 0 53px;
+	}
+	.sidebar-nav {
+		margin-top: 67px;
+		.sidebar-nav-item {
+			font-size: 1.2em;
+	    display: inline-block;
+	    padding: 4px 9px 3px;
+	    margin: 0 0 19px;
+	    margin-left: -9px;
+	    letter-spacing: 0.04em;
+			&.active {
+				background: #fff;
+				color: #000;
+				text-decoration: none;
+			}
+		}
 	}
 } // sidebar end
 
@@ -947,11 +975,15 @@ a {
 	} // order-action-btns
 	.order-footer {
     padding: 4px 10px 10px;
-		.order-checkout-btn {
+		.btn {
 			display: inline-block;
 			float: right;
 			font-size: 1.5em;
-	    padding: 7px 23px 3px;
+	    padding: 8px 34px 5px;
+			border-width: 1px;
+		}
+		.order-checkout-btn {
+			float: right;
 		}
 		.order-payment-btn {
 			display: inline-block;
@@ -964,11 +996,33 @@ a {
 			border-color: #feda5a;
 			letter-spacing: -0.014em;
 		}
+		.order-reorder-btn {
+			margin-right: 10px;
+			font-weight: normal;
+			border-color: #000;
+		}
+		.btn-default {
+			font-size: 1.5em;
+	    font-weight: bold;
+			margin-right: 20px;
+			border-color: #000;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
 		.order-coast {
 			font-size: 1.5em;
 	    font-weight: bold;
 	    margin: 9px 0px 0;
 		}
+		.order-text {
+			font-size: 1.5em;
+	    font-weight: bold;
+	    margin: 6px 0px 0;
+			display: inline-block;
+			padding: 4px;
+			float: right;
+			margin-right: 30px;
+		} // order-text
 	} // order-footer
 
 	.order-date {
@@ -976,7 +1030,7 @@ a {
 	  text-align: left;
 	  margin-left: 25%;
 	  line-height: 1.3em;
-	}
+	} // order-date
 
 } // order
 
@@ -1110,6 +1164,12 @@ hr {
 	border-color: #db3f31;
 	margin: 10px 0 20px;
 }
+.posabs {
+	position: absolute;
+}
+.mb-24 {
+	margin-bottom: 24px !important;
+}
 
 // ****************************** Banners
 
@@ -1153,6 +1213,7 @@ hr {
 }
 .col {
   margin: 0 0 0 1.6%;
+	position: relative;
 }
 
 .col:nth-child(4n+1) {
