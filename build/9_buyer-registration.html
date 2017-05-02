@@ -82,42 +82,46 @@
 		</div>
 	</header>
   <!-- main-header end -->
-<div class="profile-bg-panel bg-panel"></div>
+<div class="body-bg body-bg-001"></div>
 
 <div class="container">
 	<div class="row">
 		<div class="col span_2_of_10">
-			<!-- sidebar dart-box -->
-			<div class="sidebar dark-box posabs">
-				<div class="sidebar-title">
-					Личный <br>профиль
-				</div>
-				<div class="sidebar-nav">
-					<a href="#" class="sidebar-nav-item">История заказов</a>
-					<a href="#" class="sidebar-nav-item active">Данные для доставки</a>
-					<a href="#" class="sidebar-nav-item">Написать обращение</a>
-				</div>
-			</div>
-			<!-- sidebar dart-box -->
-
-			<!-- sidebar -->
-			<div class="sidebar bg-offset">
-				<div class="desc-title">
-					Описание возможностей <br>личного профиля
-				</div>
-				<div class="desc-text">
-					Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
-					lodo consequat. Duis aute irure dolor in reprehenderit in volupta velit esse cillum dolore laboris!
-				</div>
-			</div>
-			<!-- sidebar -->
+<div class="sidebar">
+  <div class='panel-white reg-sidebar easytabs'>
+    <!-- white-panel-tabs-buttons -->
+    <div class="panel-white-tabs-buttons">
+      <div class="tab-btn btn-1_2"><a href="#first-tab-panel" class="tab-btn-link">Клиентам</a></div>
+      <div class="tab-btn btn-1_2"><a href="#second-tab-panel" class="tab-btn-link">Партнерам</a></div>
+    </div>
+    <!-- white-panel-tabs-buttons end -->
+    <div class='panel-white-body'>
+      <div id="first-tab-panel">
+        <div class="desc-title">Зачем проходить <br>регистрацию на сайте?</div>
+        <div class="desc-text">Сommodo consequat sint! Duis aute irure dolor in repre- henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaec cupidatat non proident, sunt in culpa qui officia </div>
+        <div class="desc-title">Какие возможности<br>есть с клубной картой?</div>
+        <div class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+        <div class="desc-title">Есть еще вопросы? </div>
+        <div class="desc-text">Просто <a href="#">напишите нам</a> и мы более детально опишем суть работы сервиса</div>
+      </div>
+      <div id="second-tab-panel">
+        <div class="desc-title">Что значит быть <br>партнером Едограда?</div>
+        <div class="desc-text">Сommodo consequat sint! Duis aute irure dolor in repre- henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaec cupidatat non proident, sunt in culpa qui officia </div>
+        <div class="desc-title">Какие возможности<br>это может принести?</div>
+        <div class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+        <div class="desc-title">Есть еще вопросы?</div>
+        <div class="desc-text">Просто <a href="#">напишите нам</a> и мы более детально опишем суть работы сервиса</div>
+      </div>
+    </div>
+  </div>
+</div>
 		</div>
 		<div class="col span_8_of_10">
 			<!-- panel-white order -->
 			<div class="panel-white order">
 				<!-- panel-white-body -->
 				<div class="panel-white-body">
-					<h3 class="panel-primary-title">Ваши данные для доставки</h3>
+					<h2 class="panel-primary-title">Регистрация в качестве покупателя</h2>
 					<form action="" class="oder-form form">
 						<!-- form-row -->
 						<div class="row form-row">
@@ -157,6 +161,9 @@
 							<div class="col span_4_of_8">
 								<input type="text" class='form-field' value="" placeholder="напр. ivanpetrov@mail.ru">
 							</div>
+							<div class="col span_2_of_8">
+								<div class="validation-message error">Вы ввели некорректный email! Пожалуйста исправьте.</div>
+							</div>
 						</div>
 						<!-- form-row end-->
 						<!-- form-row -->
@@ -167,6 +174,9 @@
 							<div class="col span_4_of_8">
 								<input type="text" class='form-field' value="">
 							</div>
+							<div class="col span_2_of_8">
+								<div class="validation-message error">Пароль должен состоять минимум из 8 символов!</div>
+							</div>
 						</div>
 						<!-- form-row end-->
 					</form>
@@ -174,9 +184,12 @@
 				<!-- panel-white-body end -->
 				<div class="panel-white-footer">
 					<div class="row">
-						<div class="col span_3_of_8">&nbsp;</div>
-						<div class="col span_5_of_8">
-							<a href="" class="order-checkout-btn btn btn-primary">Изменить данные</a>
+						<div class="col span_8_of_8">
+							<a href="" class="order-checkout-btn btn btn-primary">Отправить</a>
+							<div class="panel-white-footer-text">
+								<p class="small-text">Отправляя заявку, вы соглашаетесь с <a href="#">правилами сайта</a>. <br>
+								Ваши персональные данные не будут доступны третьим лицам</p>
+							</div>
 						</div>
 					</div>
 				</div>

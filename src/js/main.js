@@ -10,7 +10,7 @@ $(document).ready(function(){
     appendArrows: $(".main-slider-arrows"),
     appendDots: $(".main-slider-dots")
   });
-  $(".main-sidebar").easytabs({
+  $(".easytabs").easytabs({
     animate: true,
     animationSpeed: 100,
     defaultTab: ".tab-btn:first-child",
