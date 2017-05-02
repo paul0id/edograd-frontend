@@ -974,14 +974,6 @@ a {
 		} // close-btn
 	} // order-action-btns
 	.order-footer {
-    padding: 4px 10px 10px;
-		.btn {
-			display: inline-block;
-			float: right;
-			font-size: 1.5em;
-	    padding: 8px 34px 5px;
-			border-width: 1px;
-		}
 		.order-checkout-btn {
 			float: right;
 		}
@@ -1000,14 +992,6 @@ a {
 			margin-right: 10px;
 			font-weight: normal;
 			border-color: #000;
-		}
-		.btn-default {
-			font-size: 1.5em;
-	    font-weight: bold;
-			margin-right: 20px;
-			border-color: #000;
-			padding-left: 40px;
-			padding-right: 40px;
 		}
 		.order-coast {
 			font-size: 1.5em;
@@ -1039,6 +1023,12 @@ a {
 .panel-white {
 	background: #fff;
 	box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+	.panel-primary-title {
+		text-align: center;
+    font-weight: bold;
+    font-size: 1.72em;
+    margin: 15px 0 27px;
+	}
 	.panel-white-tabs-buttons {
 		overflow: hidden;
 		.tab-btn {
@@ -1067,6 +1057,24 @@ a {
 	.panel-white-body {
 		padding: 15px;
 	} // panel-white-body
+	.panel-white-footer {
+    padding: 4px 10px 10px;
+		.btn {
+			display: inline-block;
+			float: right;
+			font-size: 1.5em;
+	    padding: 8px 34px 5px;
+			border-width: 1px;
+		}
+		.btn-default {
+			font-size: 1.5em;
+	    font-weight: bold;
+			margin-right: 20px;
+			border-color: #000;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	} // panel-white-footer
 } // panel-white
 
 // ******************************* Page-footer
