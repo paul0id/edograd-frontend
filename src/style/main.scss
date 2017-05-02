@@ -826,6 +826,14 @@ a {
 	    font-size: 1.3em;
 			outline: none;
 			border: 1px solid #000;
+			&::placeholder {
+				font-style: italic;
+				font-weight: lighter;
+			}
+		}
+		textarea.form-field {
+			height: 257px;
+			resize: none;
 		}
 
 	} // form-row
@@ -1073,6 +1081,13 @@ a {
 			border-color: #000;
 			padding-left: 40px;
 			padding-right: 40px;
+		}
+		.panel-white-footer-text {
+			display: inline-block;
+			float: right;
+			margin-right: 30px;
+	    font-size: 1.14em;
+			line-height: 3em;
 		}
 	} // panel-white-footer
 } // panel-white
