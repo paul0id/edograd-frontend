@@ -82,7 +82,7 @@
 		</div>
 	</header>
   <!-- main-header end -->
-<div class="profile-bg-panel bg-panel"></div>
+<div class="cart-bg-panel"></div>
 
 <div class="container">
 	<div class="row">
@@ -90,20 +90,21 @@
 			<!-- sidebar dart-box -->
 			<div class="sidebar dark-box posabs">
 				<div class="sidebar-title">
-					Личный <br>профиль
+					Ваша <br>корзина
 				</div>
-				<div class="sidebar-nav">
-					<a href="#" class="sidebar-nav-item">История заказов</a>
-					<a href="#" class="sidebar-nav-item active">Данные для доставки</a>
-					<a href="#" class="sidebar-nav-item">Написать обращение</a>
+				<div class="cart-counter">
+					<div class="cart-counter-active">Активных счетов: 2</div>
+					<div class="cart-counter-complete">Оформленных: 0</div>
 				</div>
+				<a href="#" class="btn btn-default">Зарегистрироваться</a>
+				<p class="btn-caption">Для удобства оформления заказов и участия в акциях</p>
 			</div>
 			<!-- sidebar dart-box -->
 
 			<!-- sidebar -->
 			<div class="sidebar bg-offset">
 				<div class="desc-title">
-					Описание возможностей <br>личного профиля
+					Мы помогаем заведениям и покупателям найти друг друга!
 				</div>
 				<div class="desc-text">
 					Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
@@ -117,71 +118,134 @@
 			<div class="panel-white order">
 				<!-- panel-white-body -->
 				<div class="panel-white-body">
-					<h3 class="panel-primary-title">Ваши данные для доставки</h3>
-					<form action="" class="oder-form form">
-						<!-- form-row -->
-						<div class="row form-row">
-							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Ваше имя – </label>
-							</div>
-							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="" placeholder="напр. Иван Петров">
+					<div class="row">
+						<div class="col span_2_of_8">
+							<div class="partner-logo">
+								<a href='#' class="partner-link">
+									<img src="/public/rest-logo.jpg" alt="" class="partner-logo-image">
+								</a>
 							</div>
 						</div>
-						<!-- form-row end-->
-						<!-- form-row -->
-						<div class="row form-row">
-							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Адрес доставки – </label>
+						<div class="col span_6_of_8">
+							<div class="row">
+								<div class="col span_3_of_6">
+									<h1 class="order-title">Счет № 5401</h1>
+								</div>
+								<div class="col span_2_of_6">
+									<div class="partner-name">
+										Ресторан:
+										<a href='' class="partner-link">
+											Pizza Hut
+										</a>
+									</div>
+								</div>
+								<div class="col span_1_of_6 order-action-btns">
+									<a href="#" class="order-cancel-btn">Отменить</a>
+								</div>
 							</div>
-							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="" placeholder="напр. пр. Мира 1, оф. 305">
+							<div class="order-section-title">Блюда</div>
+							<!-- order-item -->
+							<div class="row order-item">
+								<div class="col span_3_of_6">
+									<div class="order-item-title">
+										1. <a href="#" class="order-item-link">Пицца BBQ с беконом (большая) 800г</a>
+									</div>
+								</div>
+								<div class="col span_1_of_6">
+									<input type="text" class="order-item-count" value="1" \="">
+								</div>
+								<div class="col span_1_of_6">
+									<span class="order-item-price">
+										– 120р.
+									</span>
+								</div>
+								<div class="col span_1_of_6 order-action-btns">
+									<a href="#" class="close-btn"></a>
+								</div>
 							</div>
+							<!-- order-item end -->
+							<!-- order-item -->
+							<div class="row order-item">
+								<div class="col span_3_of_6">
+									<div class="order-item-title">
+										2. <a href="#" class="order-item-link">Пицца Гранд Хат Ранчо (большая) 800г</a>
+									</div>
+								</div>
+								<div class="col span_1_of_6">
+									<input type="text" class="order-item-count" value="1" \="">
+								</div>
+								<div class="col span_1_of_6">
+									<span class="order-item-price">
+										– 110р.
+									</span>
+								</div>
+								<div class="col span_1_of_6 order-action-btns">
+									<a href="#" class="close-btn"></a>
+								</div>
+							</div>
+							<!-- order-item end -->
+							<div class="order-section-title">Обеды</div>
+							<!-- order-item -->
+							<div class="row order-item">
+								<div class="col span_3_of_6">
+									<div class="order-item-title">
+										1. <a href="#" class="order-item-link">Пицца BBQ с беконом (большая) 800г</a>
+									</div>
+								</div>
+								<div class="col span_1_of_6">
+									<input type="text" class="order-item-count" value="1" \="">
+								</div>
+								<div class="col span_1_of_6">
+									<span class="order-item-price">
+										– 
+										<span class="old-price">120р.</span>
+										<span class="new-price">110р.</span>
+									</span>
+								</div>
+								<div class="col span_1_of_6 order-action-btns">
+									<a href="#" class="close-btn"></a>
+								</div>
+							</div>
+							<!-- order-item end -->
+							<!-- order-item -->
+							<div class="row order-item">
+								<div class="col span_3_of_6">
+									<div class="order-item-title">
+										2. <a href="#" class="order-item-link">Пицца Гранд Хат Ранчо (большая) 800г</a>
+									</div>
+								</div>
+								<div class="col span_1_of_6">
+									<input type="text" class="order-item-count" value="1" \="">
+								</div>
+								<div class="col span_1_of_6">
+									<span class="order-item-price">
+										– 
+										<span class="old-price">120р.</span>
+										<span class="new-price">110р.</span>
+									</span>
+								</div>
+								<div class="col span_1_of_6 order-action-btns">
+									<a href="#" class="close-btn"></a>
+								</div>
+							</div>
+							<!-- order-item end -->
 						</div>
-						<!-- form-row end-->
-						<!-- form-row -->
-						<div class="row form-row">
-							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Контактный телефон – </label>
-							</div>
-							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="" placeholder="напр. 8 999 123 45 67">
-							</div>
-						</div>
-						<!-- form-row end-->
-						<!-- form-row -->
-						<div class="row form-row">
-							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Электронная почта – </label>
-							</div>
-							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="" placeholder="напр. ivanpetrov@mail.ru">
-							</div>
-						</div>
-						<!-- form-row end-->
-						<!-- form-row -->
-						<div class="row form-row">
-							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Ваш пароль – </label>
-							</div>
-							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="">
-							</div>
-						</div>
-						<!-- form-row end-->
-					</form>
+					</div>
+					<!-- row end -->
 				</div>
 				<!-- panel-white-body end -->
-				<div class="panel-white-footer">
+				<div class="order-footer panel-white-footer">
 					<div class="row">
-						<div class="col span_3_of_8">&nbsp;</div>
-						<div class="col span_5_of_8">
-							<a href="" class="order-checkout-btn btn btn-primary">Изменить данные</a>
+						<div class="col span_5_of_8">&nbsp;</div>
+						<div class="col span_3_of_8">
+							<a href="" class="order-checkout-btn btn btn-primary">Оформить</a>
+							<div class="order-coast">Итого: 3510р.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- panel-white order end -->
+
 		</div>
 	</div>
 </div>

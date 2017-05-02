@@ -776,34 +776,79 @@ a {
 
 .bg-offset {
 	margin-top: 420px;
+	h4 {
+		margin: -20px 0 14px;
+	}
+}
+.bg-panel {
+	position: absolute;
+	top: 160px;
+	width: 100%;
+	height: 420px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: -1;
 }
 .cart-bg-panel {
-	position: absolute;
-	top: 160px;
-	width: 100%;
-	height: 420px;
-	background: url('#{$image_path}bg/panel-bg-002.jpg') 0 0 no-repeat;
-	background-size: cover;
-	z-index: -1;
+	background-image: url('#{$image_path}bg/panel-bg-002.jpg');
 }
 .order-bg-panel {
-	position: absolute;
-	top: 160px;
-	width: 100%;
-	height: 420px;
-	background: url('#{$image_path}bg/panel-bg-003.jpg') 0 0 no-repeat;
-	background-size: cover;
-	z-index: -1;
+	background-image: url('#{$image_path}bg/panel-bg-003.jpg');
 }
 .profile-bg-panel {
-	position: absolute;
-	top: 160px;
-	width: 100%;
-	height: 420px;
-	background: url('#{$image_path}bg/panel-bg-004.jpg') 0 0 no-repeat;
-	background-size: cover;
-	z-index: -1;
+	background-image: url('#{$image_path}bg/panel-bg-004.jpg');
 }
+.partner-bg-panel {
+	background-image: url('#{$image_path}bg/panel-bg-005.jpg');
+}
+
+// ************************************* Statistics
+
+.sidebar-statistics {
+	margin-bottom: 40px;
+}
+
+.statistics-row {
+	font-size: 1.16em;
+	line-height: 1.41em;
+	margin-bottom: 30px;
+	text-align: left;
+	.statistics-value {
+		display: inline-block;
+		color: #dc3f31;
+	} // statistics-value
+} // statistics-row
+
+
+// ************************************* Date-filter
+
+.date-filter {
+	overflow: hidden;
+	.date-picker {
+		width: 100%;
+		text-align: center;
+    outline: none;
+    margin: 5px 0 8px;
+    padding: 5px 0 3px;
+    font-size: 1.2em;
+	}
+	.btn {
+		float: right;
+    width: auto !important;
+    font-size: 1.1em !important;
+    padding: 2px 20px !important;
+	}
+}
+
+.filter-result-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 3px 0 8px;
+	line-height: 1.24em;
+}
+
 
 // ************************************* Order
 
@@ -927,7 +972,28 @@ a {
 
 		} // partner-link
 	} // partner-name
+
+	.order-delivery-info {
+		p {
+			margin: 18px 0;
+	    font-size: 1.1em;
+		}
+		.payment-system {
+			color: #000;
+	    border: 1px solid #000;
+	    border-radius: 0;
+	    padding: 14px 16px;
+	    font-size: 1.14em;
+	    display: inline-block;
+		}
+	}
+
 	.order-section-title {
+		font-weight: bold;
+    font-size: 1.4em;
+    margin: 0 0 10px;
+	}
+	.order-delivery-title {
 		font-weight: bold;
     font-size: 1.4em;
     margin: 0 0 10px;
@@ -952,11 +1018,15 @@ a {
 	    border: 1px solid #474747;
 	    font-size: 1.21em;
 		} // cart-item-count
+		.order-item-count-text {
+			font-size: 1.2em;
+	    font-weight: bold;
+		} // order-item-count-text
 		.order-item-price {
 			text-decoration: none;
 	    margin: 8px 0 0 0;
 	    font-size: 1.1em;
-	    display: block;
+	    display: inline-block;
 	    font-weight: bold;
 			.old-price {
 				text-decoration: line-through;
@@ -1190,8 +1260,14 @@ hr {
 .posabs {
 	position: absolute;
 }
+.mb-0 {
+	margin-bottom: 0;
+}
 .mb-24 {
 	margin-bottom: 24px !important;
+}
+.mb-27 {
+	margin-bottom: 27px;
 }
 
 // ****************************** Banners
