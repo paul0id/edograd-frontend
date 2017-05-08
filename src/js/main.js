@@ -1,4 +1,3 @@
-//= partials/helper.js
 $(document).ready(function(){
   $('.main-slider').slick({
     slidesToShow: 1,
@@ -19,4 +18,10 @@ $(document).ready(function(){
     tabs: ".tab-btn",
     updateHash: false
   });
+});
+$('.offers-grid-masonry').masonry({
+  itemSelector: '.full-offer-item',
+  percentPosition: true,
+  // columnWidth: 20,
+  gutter: 20
 });

@@ -654,6 +654,56 @@ a {
 			display: inline-block;
 		}
 	} // product-item
+	.full-offer-item {
+		width: 49%;
+		.panel-white {
+			padding: 32px 56px 15px;
+		}
+		.offer-image {
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		.offer-link {
+			display: inline-block;
+			font-size: 1.15em;
+			color: #000;
+			margin-bottom: 11px;
+			text-decoration: none;
+			font-weight: bold;
+		} // product-link
+		.offer-item-partner {
+			display: inline-block;
+			margin-bottom: 20px;
+			.offer-item-partner-link {
+				color: #000;
+			}
+		}
+		.offer-item-divider {
+			display: inline-block;
+			margin: 0 18px;
+		}
+		.offer-item-date {
+			display: inline-block;
+		}
+		.offer-item-product {
+			margin: 0 0 4px;
+		}
+		.offer-item-product-link {
+			display: inline-block;
+			font-size: 1em;
+		} // product-link
+		.offer-item-product-price {
+			font-weight: bold;
+			text-decoration: none;
+			.old-price {
+				text-decoration: line-through;
+			}
+			.new-price {
+				color: #dc3f31;
+			}
+		} // product-price
+
+	} // full-offer-item
 }
 
 
@@ -709,66 +759,66 @@ a {
 
 		} // category-nav-item
 	} // category-nav
-
-	.filter-panel-header {
-    margin-top: 13px;
-		overflow: hidden;
-		.filter-panel-title {
-			width: 50%;
-			text-align: center;
-			float: left;
-	    font-size: 1.2em;
-		}
-		.filter-panel-reset {
-			width: 50%;
-			text-align: center;
-			float: left;
-			.reset-btn {
-				margin-top: 2px;
-				cursor: pointer;
-				border-bottom: 1px dashed #777;
-		    font-size: 0.87em;
-				color: #777;
-			}
-		} // filter-panel-reset
-	} // filter-panel-header
-	.filter-panel {
-		list-style-type: none;
-		margin: 7px 3px 0;
-		padding: 0;
-		.filter-panel-item {
-			margin: 0;
-			padding: 0;
-			.filter-panel-checkbox {
-				margin-right: 2px;
-			}
-			.filter-panel-label {
-				font-style: italic;
-		    font-size: 1.09em;
-		    margin: 0 0 15px;
-			}
-		} // filter-panel-item
-	} // filter-panel
-	.filter-panel-footer {
-		margin: 14px 0 14px 20px;
-		.look_all-link {
-			font-weight: bold;
-			font-size: 1.2em;
-		}
-		.count-info {
-			font-size: 1.14em;
-		}
-	} // filter-panel-footer
 }
-
 
 .dark-box {
 	color: #fff;
-	a {
-		color: #fff;
-	}
+	a {color: #fff;}
 	.btn {border-color: #fff; }
-}
+} // dark-box
+
+
+// ************************************* Filter
+
+.filter-panel-header {
+	margin-top: 13px;
+	overflow: hidden;
+	.filter-panel-title {
+		width: 50%;
+		text-align: center;
+		float: left;
+		font-size: 1.2em;
+	}
+	.filter-panel-reset {
+		width: 50%;
+		text-align: center;
+		float: left;
+		.reset-btn {
+			margin-top: 2px;
+			cursor: pointer;
+			border-bottom: 1px dashed #777;
+			font-size: 0.87em;
+			color: #777;
+		}
+	} // filter-panel-reset
+} // filter-panel-header
+.filter-panel {
+	list-style-type: none;
+	margin: 7px 3px 0;
+	padding: 0;
+	.filter-panel-item {
+		margin: 0;
+		padding: 0;
+		.filter-panel-checkbox {
+			margin-right: 2px;
+		}
+		.filter-panel-label {
+			font-style: italic;
+			font-size: 1.09em;
+			margin: 0 0 15px;
+		}
+	} // filter-panel-item
+} // filter-panel
+.filter-panel-footer {
+	margin: 14px 0 14px 20px;
+	.look_all-link {
+		font-weight: bold;
+		font-size: 1.2em;
+	} // look_all-link
+	.count-info {
+		font-size: 1.14em;
+	} // count-info
+} // filter-panel-footer
 
 // ************************************* Bg panels
 
@@ -792,6 +842,7 @@ a {
 .order-bg-panel {background-image: url('#{$image_path}bg/panel-bg-003.jpg');}
 .profile-bg-panel {background-image: url('#{$image_path}bg/panel-bg-004.jpg');}
 .partner-bg-panel {background-image: url('#{$image_path}bg/panel-bg-005.jpg');}
+.offers-bg-panel {background-image: url('#{$image_path}bg/panel-bg-006.jpg');}
 
 .body-bg {
 	position: fixed;
@@ -939,15 +990,21 @@ a {
 		margin-top: 67px;
 		.sidebar-nav-item {
 			font-size: 1.2em;
-	    display: inline-block;
-	    padding: 4px 9px 3px;
+	    display: block;
 	    margin: 0 0 19px;
 	    margin-left: -9px;
 	    letter-spacing: 0.04em;
+			font-weight: bold;
+			.sidebar-nav-item-link {
+				padding: 4px 9px 3px;
+				color: #fff;
+			}
 			&.active {
-				background: #fff;
-				color: #000;
-				text-decoration: none;
+				.sidebar-nav-item-link {
+					background: #fff;
+					color: #000;
+					text-decoration: none;
+				}
 			}
 		} // sidebar-nav-item
 	} // sidebar-nav
@@ -1250,6 +1307,9 @@ a {
 }
 
 // ******************************* Help classes
+.full-width {
+	width: 100%;
+}
 .btn {
 	padding: 6px 17px;
 	border-radius: 0;
@@ -1305,6 +1365,9 @@ hr {
 .mb-130 {
 	margin-bottom: 130px;
 }
+.mb-30 {
+	margin-bottom: 30px;
+}
 
 // ****************************** Banners
 
@@ -1350,8 +1413,10 @@ hr {
   margin: 0 0 0 1.6%;
 	position: relative;
 }
-
-.col:nth-child(4n+1) {
+.span_1_of_4:nth-child(4n+1) {
+	margin-left: 0;
+}
+.span_4_of_8:nth-child(2n+1) {
 	margin-left: 0;
 }
 
