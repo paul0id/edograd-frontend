@@ -1,36 +1,107 @@
 //= template/head.html
-//= template/partner-page/partner-header.html
+<div class="partner-tabs">
 
-<div class="container">
-	<div class="row">
-		<div class="col span_2_of_10">
-			//= template/partner-page/main-sidebar.html
-		</div>
-		<div class="col span_8_of_10">
-			<!-- product-grid -->
-			<div class="product-grid partner-page-first-tab">
-				<!-- product-grid>row -->
-				<div class="row">
+	//= template/partner-page/partner-header.html
 
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-					//= template/loops/product-item.html
-
+	<!-- partner-products-tab -->
+	<div id="partner-products-tab">
+		<div class="container">
+			<div class="row">
+				<div class="col span_2_of_10">
+					//= template/partner-page/main-sidebar.html
 				</div>
-				<!-- product-grid>row end -->
+				<div class="col span_8_of_10">
+					<!-- product-grid -->
+					<div class="product-grid">
+						<!-- product-grid>row -->
+						<div class="row">
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+							//= template/loops/product-item.html
+						</div>
+						<!-- product-grid>row end -->
+					</div>
+					<!-- product-grid end -->
+				</div>
 			</div>
-			<!-- product-grid end -->
 		</div>
 	</div>
-</div>
+	<!-- partner-products-tab end -->
 
+	<!-- partner-offers-tab -->
+	<div id="partner-offers-tab">
+		<div class="container">
+			<div class="row">
+			  <div class="col span_2_of_10">&nbsp;</div>
+			  <div class="col span_8_of_10">
+			    <!-- offers-grid -->
+			    <div class="offers-grid offers-grid-masonry">
+			      <div class="row">
+
+			        //= template/loops/offer-item.html
+			        //= template/loops/offer-item.html
+			        //= template/loops/offer-item.html
+
+			      </div>
+			    </div>
+			    <!-- offers-grid end -->
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- partner-offers-tab end -->
+
+	<!-- partner-feedbacks-tab -->
+	<div id="partner-feedbacks-tab">
+		<div class="container">
+			<div class="row">
+			  <div class="col span_2_of_10">&nbsp;</div>
+			  <div class="col span_8_of_10">
+			    wef
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- partner-feedbacks-tab end -->
+
+	<!-- partner-about-tab -->
+	<div id="partner-feedbacks-tab">
+		<div class="container">
+			<div class="row" id="partner-about-tab">
+			  <div class="col span_2_of_10">
+					<!-- contacts -->
+						<div class="white-panel">
+							<div class="white-panel-body">
+								Адрес:
+								Улица Кутузова, дом 36
+
+								Телефон:
+								8 (8672) 64-10-00
+
+								В интернете:
+								info@one-neo.ru
+								www.one-neo.ru
+							</div>
+						</div>
+					<!-- contacts end -->
+				</div>
+			  <div class="col span_6_of_10">
+			    <h3>Первый в своем роде не только в Осетии,  но и во всей России! Каждые выходные новая шоу программа</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiaconsequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+					<p>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet </p>
+			  </div>
+				<div class="col span_2_of_10">
+					ed
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- partner-about-tab end -->
+
+</div>
 //= template/footer.html

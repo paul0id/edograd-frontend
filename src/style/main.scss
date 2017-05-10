@@ -10,6 +10,7 @@ $body-bg-001-img: url('/img/bg/body-bg-001.jpg');
 $body-bg-002-img: url('/img/bg/body-bg-002.jpg');
 $cart-big-img: url('/img/icons/cart-big.png');
 $close-btn-img: url('/img/icons/close-btn.png');
+$city-selector-img: url('/img/icons/citys.png');
 
 // ** Third Party **
 @import "../../bower_components/normalize.css/normalize";
@@ -40,6 +41,17 @@ a {
 	&:hover {
 		color: #dc3f31;
 	}
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 10;
+	display: none;
 }
 
 // ********************************** Site header
@@ -74,16 +86,59 @@ a {
 		float: left;
 		display: inline-block;
 		padding-top: 35px;
+		z-index: 100;
+		position: relative;
 
 		.current-city-item {
 			display: inline-block;
 			padding: 10px 10px 10px 44px;
 			font-style: italic;
 			text-decoration: none;
+			position: relative;
+			z-index: 1;
+			background: $city-selector-img 15px 9px no-repeat;
 			.current-city-name {
 				border-bottom: 1px dashed #000;
+			} // current-city-name
+			&:hover {
+				.current-city-name {
+					border-bottom: 1px dashed #dc3f31;
+				} // current-city-name
 			}
-		}
+			&:focus {
+				color: #000;
+			}
+		} // current-city-item
+		.city-selector-panel {
+			display: none;
+			position: absolute;
+			z-index: 0;
+	    background: #fff;
+	    top: 31px;
+	    padding: 58px 65px 20px 42px;
+	    font-style: italic;
+	    white-space: nowrap;
+			box-shadow: 0 0 27px rgba(0, 0, 0, 0.3);
+			.city-selector-item {
+				.city-selector-link {
+					display: block;
+					padding: 7px 0;
+					text-decoration: none;
+				} // city-selector-link
+			} // city-selector-item
+			.close-btn {
+				z-index: 2;
+				position: absolute;
+				top: 13px;
+		    right: 13px;
+		    display: inline-block;
+		    width: 1.4em;
+		    height: 1.4em;
+		    background: $close-btn-img 0 0 no-repeat;
+		    background-size: cover;
+				cursor: pointer;
+			} // close-btn
+		} // city-selector-panel
 	} // city-selector
 	.top-nav-bar {
 		padding: 34px 232px 0 144px;
@@ -343,11 +398,16 @@ a {
 		margin: 22px 0 24px;
 
 		.partner-header-nav-bar-item {
-			color: #fff;
-			padding: 24px;
+			display: inline-block;
+			padding: 0 24px;
+			.partner-header-nav-bar-item-link {
+				color: #fff;
+			}
 			&.active {
-				text-decoration: none;
-				font-weight: bold;
+				.partner-header-nav-bar-item-link {
+					text-decoration: none;
+					font-weight: bold;
+				}
 			}
 			&:first-child {
 				padding-left: 0;
