@@ -6,9 +6,7 @@
     <title>Edograd</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
   <!-- main-header -->
@@ -29,6 +27,7 @@
               <!-- search-from end -->
             </div>
             <div class="col span_9_of_12">
+              <div class="overlay"></div>
               <!-- auth-bar -->
               <div class="auth-bar">
                 <a href="#" class="sign-in auth-bar-item">Вход</a>
@@ -42,6 +41,15 @@
                 <a href="#" class="current-city-item">
                   <span class="current-city-name">Владикавказ</span>
                 </a>
+                <div class="city-selector-panel">
+                  <div class="close-btn"></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ростов-на-Дону</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Пятигорск</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Владикавказ</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ставрополь</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Махачкала</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Грозный</a></div>
+                </div>
               </div>
               <!-- region-selector end -->
 
@@ -82,510 +90,704 @@
 		</div>
 	</header>
   <!-- main-header end -->
-<!-- partner-header -->
-<div class="partner-header">
-	<div class="container">
-		<div class="row">
-			<div class="col span_2_of_10">
-				<div class="partner-logo-box">
-					<img src="/public/rest-logo.jpg" alt="" class="partner-logo-image">
-				</div>
-			</div>
-			<div class="col span_5_of_10">
-				<h2 class="partner-header-title">Neo – ресторан с интерактивными столами</h2>
-				<div class="partner-header-kitchen-bar">Кухня: Пицца / Бургеры / Французская / Итальянская / Испанская</div>
-				<div class="partner-header-nav-bar">
-					<a href="#" class="partner-header-nav-bar-item active">Меню</a>
-					<a href="#" class="partner-header-nav-bar-item">Акции</a>
-					<a href="#" class="partner-header-nav-bar-item">Отзывы</a>
-					<a href="#" class="partner-header-nav-bar-item">О заведении</a>
-				</div>
-			</div>
-			<div class="col span_3_of_10">
+<div class="partner-tabs">
 
-				<div class="partner-header-rating">
-					<span class="rating-title">Рейтинг:</span>
-					<span class="rating-stars">*****</span>
-					<span class="rating-count">54 оценки</span>
-				</div>
-
-				<!-- partner-header-features -->
-				<div class="partner-header-features">
-					<div class="row">
-						<div class="col span_1_of_3">
-							<img src="/img/icons/invoice.png" alt="" class="feauture-image">
-							<div class="feature-title">Мин. заказ:</div>
-							<div class="feature-value">500 P</div>
-						</div>
-						<div class="col span_1_of_3">
-							<img src="/img/icons/ship_cost.png" alt="" class="feauture-image">
-							<div class="feature-title">Доставка:</div>
-							<div class="feature-value">Бесплатно</div>
-						</div>
-						<div class="col span_1_of_3">
-							<img src="/img/icons/ship_time.png" alt="" class="feauture-image">
-							<div class="feature-title">Время доставки:</div>
-							<div class="feature-value">До 40 минут</div>
-						</div>
+	<!-- partner-header -->
+	<div class="partner-header">
+		<div class="container">
+			<div class="row">
+				<div class="col span_2_of_10">
+					<div class="partner-logo-box">
+						<img src="/public/rest-logo.jpg" alt="" class="partner-logo-image">
 					</div>
 				</div>
-				<!-- partner-header-features end -->
-
+				<div class="col span_5_of_10">
+					<h2 class="partner-header-title">Neo – ресторан с интерактивными столами</h2>
+					<div class="partner-header-kitchen-bar">Кухня: Пицца / Бургеры / Французская / Итальянская / Испанская</div>
+					<div class="partner-header-nav-bar">
+						<div class="partner-header-nav-bar-item"><a href="#partner-products-tab" class="partner-header-nav-bar-item-link">Меню</a></div>
+						<div class="partner-header-nav-bar-item"><a href="#partner-offers-tab" class="partner-header-nav-bar-item-link">Акции</a></div>
+						<div class="partner-header-nav-bar-item"><a href="#partner-feedbacks-tab" class="partner-header-nav-bar-item-link">Отзывы</a></div>
+						<div class="partner-header-nav-bar-item"><a href="#partner-about-tab" class="partner-header-nav-bar-item-link">О заведении</a></div>
+					</div>
+				</div>
+				<div class="col span_3_of_10">
+	
+					<div class="partner-header-rating">
+						<span class="rating-title">Рейтинг:</span>
+						<span class="rating-stars">*****</span>
+						<span class="rating-count">54 оценки</span>
+					</div>
+	
+					<!-- partner-header-features -->
+					<div class="partner-header-features">
+						<div class="row">
+							<div class="col span_1_of_3">
+								<img src="/img/icons/invoice.png" alt="" class="feauture-image">
+								<div class="feature-title">Мин. заказ:</div>
+								<div class="feature-value">500 P</div>
+							</div>
+							<div class="col span_1_of_3">
+								<img src="/img/icons/ship_cost.png" alt="" class="feauture-image">
+								<div class="feature-title">Доставка:</div>
+								<div class="feature-value">Бесплатно</div>
+							</div>
+							<div class="col span_1_of_3">
+								<img src="/img/icons/ship_time.png" alt="" class="feauture-image">
+								<div class="feature-title">Время доставки:</div>
+								<div class="feature-value">До 40 минут</div>
+							</div>
+						</div>
+					</div>
+					<!-- partner-header-features end -->
+	
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- partner-header ned -->
+	<!-- partner-header ned -->
 
-<div class="container">
-	<div class="row">
-		<div class="col span_2_of_10">
-			<div class='panel-white main-sidebar easytabs'>
-			  <!-- white-panel-tabs-buttons -->
-			  <div class="panel-white-tabs-buttons">
-			    <div class="tab-btn btn-1_3"><a href="#first-tab-panel" class="tab-btn-link">Блюда</a></div>
-			    <div class="tab-btn btn-1_3"><a href="#second-tab-panel" class="tab-btn-link">Обеды</a></div>
-			    <div class="tab-btn btn-1_3"><a href="#third-tab-panel" class="tab-btn-link">Продукты</a></div>
-			  </div>
-			  <!-- white-panel-tabs-buttons end -->
-			  <div class='panel-white-body'>
-			    <div id="first-tab-panel">
-			      <!-- category-nav -->
-			      <ul class="category-nav">
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Шаурма</a>
-			          <span class="category-nav-item-count"> – 18</span>
-			        </li>
-			        <li class="category-nav-item active">
-			          <a href="#" class="category-nav-link">Пицца</a>
-			          <span class="category-nav-item-count"> – 15</span>
-			          <ul class="sub-category-nav">
-			            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Большие пиццы</a></li>
-			            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Маленькие пиццы</a></li>
-			            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Соусы к пиццам</a></li>
-			          </ul>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Напитки</a>
-			          <span class="category-nav-item-count"> – 33</span>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Кесадия</a>
-			          <span class="category-nav-item-count"> – 5</span>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Роллы</a>
-			          <span class="category-nav-item-count"> – 19</span>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Соусы</a>
-			          <span class="category-nav-item-count"> – 12</span>
-			        </li>
-			      </ul>
-			      <!-- category-nav end -->
-			    </div>
-			    <div id="second-tab-panel">
-			      <!-- category-nav -->
-			      <ul class="category-nav">
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Офисные обеды</a>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Постные комплекты</a>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Диетические наборы</a>
-			        </li>
-			      </ul>
-			      <!-- category-nav end -->
-			            <hr>
-			      <!-- filter-panel -->
-			      <div class="filter-panel-header">
-			        <div class="filter-panel-title">Сортировать:</div>
-			        <div class="filter-panel-reset">
-			          <span class="reset-btn">Сбросить</span>
+	<!-- partner-products-tab -->
+	<div id="partner-products-tab">
+		<div class="container">
+			<div class="row">
+				<div class="col span_2_of_10">
+					<div class='panel-white main-sidebar easytabs'>
+					  <!-- white-panel-tabs-buttons -->
+					  <div class="panel-white-tabs-buttons">
+					    <div class="tab-btn btn-1_3"><a href="#first-tab-panel" class="tab-btn-link">Блюда</a></div>
+					    <div class="tab-btn btn-1_3"><a href="#second-tab-panel" class="tab-btn-link">Обеды</a></div>
+					    <div class="tab-btn btn-1_3"><a href="#third-tab-panel" class="tab-btn-link">Продукты</a></div>
+					  </div>
+					  <!-- white-panel-tabs-buttons end -->
+					  <div class='panel-white-body'>
+					    <div id="first-tab-panel">
+					      <!-- category-nav -->
+					      <ul class="category-nav">
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Шаурма</a>
+					          <span class="category-nav-item-count"> – 18</span>
+					        </li>
+					        <li class="category-nav-item active">
+					          <a href="#" class="category-nav-link">Пицца</a>
+					          <span class="category-nav-item-count"> – 15</span>
+					          <ul class="sub-category-nav">
+					            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Большие пиццы</a></li>
+					            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Маленькие пиццы</a></li>
+					            <li class="sub-category-nav-item"><a href="#" class="sub-category-nav-link">Соусы к пиццам</a></li>
+					          </ul>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Напитки</a>
+					          <span class="category-nav-item-count"> – 33</span>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Кесадия</a>
+					          <span class="category-nav-item-count"> – 5</span>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Роллы</a>
+					          <span class="category-nav-item-count"> – 19</span>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Соусы</a>
+					          <span class="category-nav-item-count"> – 12</span>
+					        </li>
+					      </ul>
+					      <!-- category-nav end -->
+					    </div>
+					    <div id="second-tab-panel">
+					      <!-- category-nav -->
+					      <ul class="category-nav">
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Офисные обеды</a>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Постные комплекты</a>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Диетические наборы</a>
+					        </li>
+					      </ul>
+					      <!-- category-nav end -->
+					            <hr>
+					      <!-- filter-panel -->
+					      <div class="filter-panel-header">
+					        <div class="filter-panel-title">Сортировать:</div>
+					        <div class="filter-panel-reset">
+					          <span class="reset-btn">Сбросить</span>
+					        </div>
+					      </div>
+					      <ul class="filter-panel">
+					        <li class="filter-panel-item">
+					          <input type="checkbox" class="filter-panel-checkbox">
+					          <label class="filter-panel-label">По минимальной цене</label>
+					        </li>
+					        <li class="filter-panel-item">
+					          <input type="checkbox" class="filter-panel-checkbox">
+					          <label class="filter-panel-label">По времени доставки</label>
+					        </li>
+					        <li class="filter-panel-item">
+					          <input type="checkbox" class="filter-panel-checkbox">
+					          <label class="filter-panel-label">По заведениям</label>
+					        </li>
+					        <li class="filter-panel-item">
+					          <input type="checkbox" class="filter-panel-checkbox">
+					          <label class="filter-panel-label">Обеды с акциями</label>
+					        </li>
+					      </ul>
+					      <!-- filter-panel end -->
+					    </div>
+					    <div id="third-tab-panel">
+					      <!-- category-nav -->
+					      <ul class="category-nav">
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Картошка</a>
+					          <span class="category-nav-item-count"> – 12</span>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Капуста</a>
+					          <span class="category-nav-item-count"> – 16</span>
+					        </li>
+					        <li class="category-nav-item">
+					          <a href="#" class="category-nav-link">Морковка</a>
+					          <span class="category-nav-item-count"> – 11</span>
+					        </li>
+					      </ul>
+					      <!-- category-nav end -->
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col span_8_of_10">
+					<!-- product-grid -->
+					<div class="product-grid">
+						<!-- product-grid>row -->
+						<div class="row">
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+							<!-- product-item -->
+							<div class="col span_1_of_4">
+								<div class="product-item">
+									<!-- product-item-preview -->
+									<div class="product-item-preview">
+										<a href="#" class="icon-btn-addtocart"></a>
+										<img src="/public/product.jpg" alt="" class="product-image">
+										<div class="product-link product-title">Пицца Джульета</div>
+										<span class="product-price">
+											– 
+											<span class="old-price">120р.</span>
+											<span class="new-price">110р.</span>
+										</span>
+									</div>
+									<!-- product-item-preview end -->
+									<!-- product-item-full-info -->
+									<div class="product-item-full-info">
+										<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
+										<div class="product-buttons">
+											<input type="text" class="addtocart-count" value="1"\>
+											<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
+										</div>
+									</div>
+									<!-- product-item-footer end -->
+								</div>
+							</div>
+							<!-- product-item end -->
+						</div>
+						<!-- product-grid>row end -->
+					</div>
+					<!-- product-grid end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- partner-products-tab end -->
+
+	<!-- partner-offers-tab -->
+	<div id="partner-offers-tab">
+		<div class="container">
+			<div class="row">
+			  <div class="col span_2_of_10">&nbsp;</div>
+			  <div class="col span_8_of_10">
+			    <!-- offers-grid -->
+			    <div class="offers-grid offers-grid-masonry">
+			      <div class="row">
+
+			        <!-- offer-item -->
+			        <div class="full-offer-item">
+			          <!-- panel-white -->
+			          <div class="panel-white mb-30">
+			            <!-- panel-white-body -->
+			            <div class="panel-white-body">
+			        
+			              <div class="">
+			                <a href="#" class="offer-link full-width"><img src="/public/offer.png" alt="" class="offer-image"></a>
+			                <a href="#" class="offer-link offer-title">Неделя национальной осетинской кухни. Скидки на весь ассортимент пирогов!</a>
+			                <div class="offer-item-partner">
+			                  Ресторан: «<a href="#" class="offer-item-partner-link">Не горюй</a>»
+			                </div>
+			                <div class="offer-item-divider">|</div>
+			                <div class="offer-item-date">
+			                  Акция до 21.05.17
+			                </div>
+			        
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Кабускаджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">120р.</span>
+			            				<span class="new-price">180р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			              </div>
+			        
+			            </div>
+			            <!-- panel-white-body end -->
+			          </div>
+			          <!-- panel-white end -->
 			        </div>
+			        <!-- offer-item end -->
+			        <!-- offer-item -->
+			        <div class="full-offer-item">
+			          <!-- panel-white -->
+			          <div class="panel-white mb-30">
+			            <!-- panel-white-body -->
+			            <div class="panel-white-body">
+			        
+			              <div class="">
+			                <a href="#" class="offer-link full-width"><img src="/public/offer.png" alt="" class="offer-image"></a>
+			                <a href="#" class="offer-link offer-title">Неделя национальной осетинской кухни. Скидки на весь ассортимент пирогов!</a>
+			                <div class="offer-item-partner">
+			                  Ресторан: «<a href="#" class="offer-item-partner-link">Не горюй</a>»
+			                </div>
+			                <div class="offer-item-divider">|</div>
+			                <div class="offer-item-date">
+			                  Акция до 21.05.17
+			                </div>
+			        
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Кабускаджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">120р.</span>
+			            				<span class="new-price">180р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			              </div>
+			        
+			            </div>
+			            <!-- panel-white-body end -->
+			          </div>
+			          <!-- panel-white end -->
+			        </div>
+			        <!-- offer-item end -->
+			        <!-- offer-item -->
+			        <div class="full-offer-item">
+			          <!-- panel-white -->
+			          <div class="panel-white mb-30">
+			            <!-- panel-white-body -->
+			            <div class="panel-white-body">
+			        
+			              <div class="">
+			                <a href="#" class="offer-link full-width"><img src="/public/offer.png" alt="" class="offer-image"></a>
+			                <a href="#" class="offer-link offer-title">Неделя национальной осетинской кухни. Скидки на весь ассортимент пирогов!</a>
+			                <div class="offer-item-partner">
+			                  Ресторан: «<a href="#" class="offer-item-partner-link">Не горюй</a>»
+			                </div>
+			                <div class="offer-item-divider">|</div>
+			                <div class="offer-item-date">
+			                  Акция до 21.05.17
+			                </div>
+			        
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Кабускаджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">120р.</span>
+			            				<span class="new-price">180р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			                <div class="offer-item-product">
+			                  <a href="#" class="offer-item-product-link offer-item-product-title">Картофджин</a>
+			            			<span class="offer-item-product-price">
+			            				– 
+			            				<span class="old-price">175р.</span>
+			            				<span class="new-price">150р.</span>
+			            			</span>
+			                </div>
+			              </div>
+			        
+			            </div>
+			            <!-- panel-white-body end -->
+			          </div>
+			          <!-- panel-white end -->
+			        </div>
+			        <!-- offer-item end -->
+
 			      </div>
-			      <ul class="filter-panel">
-			        <li class="filter-panel-item">
-			          <input type="checkbox" class="filter-panel-checkbox">
-			          <label class="filter-panel-label">По минимальной цене</label>
-			        </li>
-			        <li class="filter-panel-item">
-			          <input type="checkbox" class="filter-panel-checkbox">
-			          <label class="filter-panel-label">По времени доставки</label>
-			        </li>
-			        <li class="filter-panel-item">
-			          <input type="checkbox" class="filter-panel-checkbox">
-			          <label class="filter-panel-label">По заведениям</label>
-			        </li>
-			        <li class="filter-panel-item">
-			          <input type="checkbox" class="filter-panel-checkbox">
-			          <label class="filter-panel-label">Обеды с акциями</label>
-			        </li>
-			      </ul>
-			      <!-- filter-panel end -->
 			    </div>
-			    <div id="third-tab-panel">
-			      <!-- category-nav -->
-			      <ul class="category-nav">
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Картошка</a>
-			          <span class="category-nav-item-count"> – 12</span>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Капуста</a>
-			          <span class="category-nav-item-count"> – 16</span>
-			        </li>
-			        <li class="category-nav-item">
-			          <a href="#" class="category-nav-link">Морковка</a>
-			          <span class="category-nav-item-count"> – 11</span>
-			        </li>
-			      </ul>
-			      <!-- category-nav end -->
-			    </div>
+			    <!-- offers-grid end -->
 			  </div>
 			</div>
 		</div>
-		<div class="col span_8_of_10">
-			<!-- product-grid -->
-			<div class="product-grid partner-page-first-tab">
-				<!-- product-grid>row -->
-				<div class="row">
+	</div>
+	<!-- partner-offers-tab end -->
 
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-					<!-- product-item -->
-					<div class="col span_1_of_4">
-						<div class="product-item">
-							<!-- product-item-preview -->
-							<div class="product-item-preview">
-								<a href="#" class="icon-btn-addtocart"></a>
-								<a href="#" class="product-link"><img src="/public/product.jpg" alt="" class="product-image"></a>
-								<a href="#" class="product-link product-title">Пицца Джульета</a>
-								<span class="product-price">
-									– 
-									<span class="old-price">120р.</span>
-									<span class="new-price">110р.</span>
-								</span>
-							</div>
-							<!-- product-item-preview end -->
-							<!-- product-item-full-info -->
-							<div class="product-item-full-info">
-								<p class="product-description">Modi tempora incidunt ut labore et dolore magnam aliquam quaerat auru voluptatem dud estum matis tempora. </p>
-								<div class="product-buttons">
-									<input type="text" class="addtocart-count" value="1"\>
-									<a href="#" class="btn btn-primary btn-addtocart">В корзину</a>
-								</div>
-							</div>
-							<!-- product-item-footer end -->
-						</div>
-					</div>
-					<!-- product-item end -->
-
-				</div>
-				<!-- product-grid>row end -->
+	<!-- partner-feedbacks-tab -->
+	<div id="partner-feedbacks-tab">
+		<div class="container">
+			<div class="row">
+			  <div class="col span_2_of_10">&nbsp;</div>
+			  <div class="col span_8_of_10">
+			    wef
+			  </div>
 			</div>
-			<!-- product-grid end -->
 		</div>
 	</div>
-</div>
+	<!-- partner-feedbacks-tab end -->
 
+	<!-- partner-about-tab -->
+	<div id="partner-about-tab">
+		<div class="partner-slider">
+			<img src="https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg" alt="" class="partner-slider-item">
+			<img src="http://www.walnuthillcollege.edu/wp-content/uploads/2016/01/home_restaurants-1.jpg" alt="" class="partner-slider-item">
+			<img src="https://media.timeout.com/images/102030827/image.jpg" alt="" class="partner-slider-item">
+		</div>
+		<div class="container">
+			<div class="row">
+			  <div class="col span_2_of_10">
+					<!-- contacts -->
+					<div class="panel-white">
+						<div class="panel-white-body">
+							<!-- contact-row -->
+							<div class="contact-row">
+								<div class="contact-title">Адрес:</div>
+								<div class="contact-text">
+									Улица Кутузова, дом 36
+								</div>
+							</div>
+							<!-- contact-row end -->
+							<!-- contact-row -->
+							<div class="contact-row">
+								<div class="contact-title">Телефон:</div>
+								<div class="contact-text">
+									<a href="tel:78672641000" class="contact-link">8 (8672) 64-10-00</a>
+								</div>
+							</div>
+							<!-- contact-row end -->
+							<!-- contact-row -->
+							<div class="contact-row">
+								<div class="contact-title">В интернете:</div>
+								<div class="contact-text">
+									<a href="" class="contact-link">info@one-neo.ru</a>
+									<a href="" class="contact-link">www.one-neo.ru</a>
+								</div>
+							</div>
+							<!-- contact-row end -->
+						</div>
+					</div>
+					<!-- contacts end -->
+				</div>
+			  <div class="col span_5_of_10">
+			    <h4 class="partner-about-title">Первый в своем роде не только в Осетии,  но и во всей России! <br>Каждые выходные новая шоу программа</h4>
+					<p class="partner-about-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiaconsequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+					<p>Modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet </p>
+			  </div>
+				<div class="col span_3_of_10">
+					<h4 class="partner-counter-title">Показатели:</h4>
+					<div class="partner-counter-row">Блюд или продуктов на сайте – <span class="count">35</span></div>
+					<div class="partner-counter-row">Всего доставлено заказов – <span class="count">462</span></div>
+					<div class="partner-counter-row">Просмотров страницы – <span class="count">819</span></div>
+					<div class="partner-counter-row">Количество отзывов – <span class="count">68</span></div>
+					<hr>
+					<div class="partner-conditions-title">Особые условия:</div>
+					<div class="partner-conditions-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="map-container">
+			<iframe src="https://api-maps.yandex.ru/frame/v1/-/CZg3NSnt" width="100%" height="500" frameborder="0"></iframe>
+		</div>
+	</div>
+	<!-- partner-about-tab end -->
+
+</div>
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
@@ -626,6 +828,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
 
 	<script>

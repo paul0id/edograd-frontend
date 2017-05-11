@@ -1,5 +1,5 @@
 // ** Variables **
-$slick-arrow-img: url('/img/main-slider-arr.png');
+$slick-arrow-img: url('/img/icons/main-slider-arr.png');
 $panel-bg-001-img: url('/img/bg/panel-bg-001.jpg');
 $panel-bg-002-img: url('/img/bg/panel-bg-002.jpg');
 $panel-bg-003-img: url('/img/bg/panel-bg-003.jpg');
@@ -458,6 +458,103 @@ a {
 
 } // partner-header
 
+#partner-about-tab {
+	.partner-slider {
+		margin: -50px 0 70px;
+		height: 330px;
+		overflow: hidden;
+		.partner-slider-item {
+			position: relative;
+			height: 330px;
+			outline: none;
+			z-index: 1;
+		} // partner-slider-item
+		.slick-arrow {
+			position: absolute;
+			z-index: 2;
+			top: 135px;
+			text-indent: -99999px;
+			width: 25px;
+			height: 40px;
+			background: transparent;
+			border: 0;
+			outline: none;
+			background-image: $slick-arrow-img;
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			padding: 10px;
+			box-sizing: content-box;
+			left: 50%;
+			&.slick-prev {
+				margin-left: -645px;
+			} // slick-prev
+			&.slick-next {
+				margin-left: 600px;
+				transform: rotate(180deg);
+			} // slick-next
+		} // slick-prev
+	} // partner-slider
+
+	.contact-row {
+		font-weight: bold;
+		padding: 0 0 18px;
+    margin: 12px 15px 0;
+		border-bottom: 1px solid #dc3f31;
+		&:last-child {
+			border: 0;
+		}
+		.contact-title {
+			color: #dc3f31;
+	    margin-bottom: 3px;
+		} // contact-title
+		.contact-text {
+			font-size: 1.1em;
+			.contact-link {
+				display: block;
+				text-decoration: none;
+			}
+		} // contact-text
+	} // contact-row
+
+	.partner-about-title {
+		margin: 1px 0 23px;
+    line-height: 1.3em;
+	}
+	.partner-about-text {
+		line-height: 1.3em;
+    margin: 18px 0;
+	}
+	.partner-counter-title {
+		font-size: 1.3em;
+		margin: 4px 0 15px;
+	}
+	.partner-counter-row {
+		font-size: 1.13em;
+		margin: 0 0 8px;
+		&:last-child {
+			margin-bottom: 18px;
+		}
+		.count {
+			color: #dc3f31;
+		}
+	}
+	.partner-conditions-title {
+		font-style: italic;
+    font-size: 1.06em;
+    margin-bottom: 3px;
+	}
+	.partner-conditions-text {
+		font-style: italic;
+    line-height: 1.3em;
+	}
+
+	.map-container {
+		margin: 64px 0 0;
+		height: 500px;
+	} // map-container
+}
+
 
 // ******************************* Products
 
@@ -501,17 +598,15 @@ a {
 			position: absolute;
 			// тут картинка корзины будет
 		}
-		.product-imgae-link {
-			display: block;
-			.product-image {
-				width: 100%;
-				margin-bottom: 9px;
-			}
-		} // product-imge-link
-		.product-link {
+		.product-image {
+			width: 100%;
+			margin-bottom: 9px;
+		}
+		.product-title {
 			display: inline-block;
 			font-size: 1.2em;
-		} // product-link
+			text-decoration: underline;
+		} // product-title
 		.product-price {
 			font-weight: bold;
 			text-decoration: none;
@@ -656,11 +751,11 @@ a {
 			max-width: 100%;
 			margin-bottom: 9px;
 		}
-		.category-link {
+		.category-title {
 			display: inline-block;
 			font-size: 1.2em;
-			outline: none;
-		} // product-link
+			text-decoration: underline;
+		} // category-title
 		.category-item-preview {
 			position: relative;
 			z-index: 2;

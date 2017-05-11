@@ -6,9 +6,7 @@
     <title>Edograd</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
   <!-- main-header -->
@@ -29,6 +27,7 @@
               <!-- search-from end -->
             </div>
             <div class="col span_9_of_12">
+              <div class="overlay"></div>
               <!-- auth-bar -->
               <div class="auth-bar">
                 <a href="#" class="sign-in auth-bar-item">Вход</a>
@@ -42,6 +41,15 @@
                 <a href="#" class="current-city-item">
                   <span class="current-city-name">Владикавказ</span>
                 </a>
+                <div class="city-selector-panel">
+                  <div class="close-btn"></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ростов-на-Дону</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Пятигорск</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Владикавказ</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ставрополь</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Махачкала</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Грозный</a></div>
+                </div>
               </div>
               <!-- region-selector end -->
 
@@ -93,9 +101,9 @@
 					Личный <br>профиль
 				</div>
 				<div class="sidebar-nav">
-					<a href="#" class="sidebar-nav-item">История заказов</a>
-					<a href="#" class="sidebar-nav-item active">Данные для доставки</a>
-					<a href="#" class="sidebar-nav-item">Написать обращение</a>
+					<div class="sidebar-nav-item"><a href="#" class="sidebar-nav-item-link">История заказов</a></div>
+					<div class="sidebar-nav-item active"><a href="#" class="sidebar-nav-item-link">Данные для доставки</a></div>
+					<div class="sidebar-nav-item"><a href="#" class="sidebar-nav-item-link">Написать обращение</a></div>
 				</div>
 			</div>
 			<!-- sidebar dart-box -->
@@ -226,6 +234,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
 
 	<script>

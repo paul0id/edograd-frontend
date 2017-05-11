@@ -9,6 +9,15 @@ $(document).ready(function(){
     appendArrows: $(".main-slider-arrows"),
     appendDots: $(".main-slider-dots")
   });
+  $('.partner-slider').slick({
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+  });
   $(".easytabs").easytabs({
     animate: true,
     animationSpeed: 100,
