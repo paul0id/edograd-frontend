@@ -52,3 +52,10 @@ $('.city-selector .current-city-item').click(function(){
 $('.city-selector .close-btn').click(function(){
   $('.city-selector-panel').slideUp(100);
 });
+
+
+// Rating
+$('.rating-stars-select').rating(function(vote, event){
+    console.log(vote, event);
+    $('.feedback-item-rating').val(vote);
+});

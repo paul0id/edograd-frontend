@@ -28,6 +28,7 @@ $city-selector-img: url('/img/icons/citys.png');
 @import "./grid/12cols";
 @import "./libs/slick";
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import "./libs/rating";
 
 body {
 	font-family: 'PT Sans', sans-serif;
@@ -555,6 +556,55 @@ a {
 	} // map-container
 }
 
+#partner-feedbacks-tab {
+
+	.rating-stars {
+		.rating-stars-title {
+			font-weight: bold;
+			font-size: 1.3em;
+		}
+		.rating-stars-desc {
+			font-size: 1em;
+			margin: -6px 0 8px;
+		}
+	}
+
+	.panel-white-body {
+	    padding: 16px 33px 24px;
+	}
+	.feedback-item {
+		margin-bottom: 26px;
+
+		.feedback-item-title {
+			font-weight: bold;
+	    font-size: 1.3em;
+	    margin-bottom: 6px;
+		}
+		.feedback-item-text {
+			font-size: 0.92em;
+	    line-height: 1.2em;
+		}
+		.feedback-item-input {
+			width: 100%;
+		  padding: 6px 9px;
+		  font-size: 1.3em;
+			outline: none;
+			border: 1px solid #000;
+			height: 82px;
+			resize: none;
+			&::placeholder {
+				font-style: italic;
+				font-weight: lighter;
+			}
+		} // feedback-item-input
+		.send-feedback-btn {
+			margin: 104px 0 -14px;
+		}
+		.feedback-item-date {
+			text-align: right;
+		}
+	} // feedback-item
+}
 
 // ******************************* Products
 
@@ -1420,6 +1470,7 @@ a {
 // ******************************* Page-footer
 
 .page-footer {
+	margin-top: 50px;
 	padding: 58px 0 60px;
 	background: #2d2d2d;
 	color: #fff;
