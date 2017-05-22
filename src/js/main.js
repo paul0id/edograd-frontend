@@ -54,8 +54,7 @@ $('.city-selector .close-btn').click(function(){
 });
 
 
-// Rating
+// Rating set
 $('.rating-stars-select').rating(function(vote, event){
-    console.log(vote, event);
     $('.feedback-item-rating').val(vote);
 });

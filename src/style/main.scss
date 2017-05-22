@@ -712,6 +712,27 @@ a {
 
 
 // ************************************* Lunches
+.lunch-nav {
+	background: #fff;
+	margin-bottom: 30px;
+	text-align: center;
+	.lunch-nav-item {
+		font-size: 1.2em;
+		width: 16%;
+		display: inline-block;
+		.lunch-nav-item-link {
+			text-decoration: none;
+			display: inline-block;
+			padding: 13px 0 9px;
+			box-sizing: content-box;
+		}
+		&.active {
+			.lunch-nav-item-link {
+				border-bottom: 6px solid red;
+			}
+		}
+	}
+}
 
 .lunch-grid {
 
