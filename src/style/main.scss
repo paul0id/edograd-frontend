@@ -552,11 +552,15 @@ a {
 
 	.map-container {
 		margin: 64px 0 0;
-		height: 500px;
+		margin-bottom: -50px;
+		#partner_map {
+			width: 100% !important;
+			height: 500px !important;
+		}
 	} // map-container
 }
 
-#partner-feedbacks-tab {
+#partner-feedback-tab {
 
 	.rating-stars {
 		.rating-stars-title {
