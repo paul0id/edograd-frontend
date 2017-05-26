@@ -1413,6 +1413,72 @@ a {
 
 } // order
 
+
+// ******************************* Partners map
+
+.partners-map-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	#partners-map {
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+	}
+} // partners-map-container
+
+.partners-search-label {
+	font-size: 1.14em;
+	display: inline-block;
+	padding: 5px 0;
+	margin: 0;
+}
+.partners-search-input {
+	display: inline-block;
+	font-weight: bold;
+	font-style: normal;
+	padding: 3px 8px;
+	border: 1px solid #dc3f31;
+	width: 100%;
+	font-size: 1.16em;
+}
+.partners-search-button.btn {
+	display: inline-block;
+	float: right;
+	padding: 4px;
+	width: 100%;
+}
+
+.partners-map-card {
+	width: 220px;
+	.images {
+		img {
+			width: 100%;
+		}
+		.partner-image {
+			width: 50%;
+			float: left;
+		}
+		.partner-logo {
+			width: 50%;
+			float: left;
+		}
+	}
+	.partner-title {
+		display: block;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+	.partner-address {
+		opacity: 0.8;
+    font-size: 0.9em;
+	}
+}
+
 // ******************************* White-panel
 
 .panel-white {
@@ -1459,6 +1525,9 @@ a {
 	} // panel-white-tabs-buttons
 	.panel-white-body {
 		padding: 15px;
+		&.thin {
+			padding: 8px 17px;
+		}
 	} // panel-white-body
 	.panel-white-footer {
     padding: 4px 10px 10px;
@@ -1499,6 +1568,7 @@ a {
 	padding: 58px 0 60px;
 	background: #2d2d2d;
 	color: #fff;
+	position: relative;
 
 	.logo {
 		margin-bottom: 26px;
