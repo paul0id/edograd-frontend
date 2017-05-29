@@ -8,6 +8,8 @@ $panel-bg-005-img: url('/img/bg/panel-bg-005.jpg');
 $panel-bg-006-img: url('/img/bg/panel-bg-006.jpg');
 $body-bg-001-img: url('/img/bg/body-bg-001.jpg');
 $body-bg-002-img: url('/img/bg/body-bg-002.jpg');
+$content-bg-001-img: url('/img/bg/cont-bg-001.jpg');
+$content-bg-002-img: url('/img/bg/cont-bg-002.jpg');
 $cart-big-img: url('/img/icons/cart-big.png');
 $close-btn-img: url('/img/icons/close-btn.png');
 $city-selector-img: url('/img/icons/citys.png');
@@ -1094,6 +1096,9 @@ a {
 .partner-bg-panel {background-image: $panel-bg-005-img;}
 .offers-bg-panel {background-image: $panel-bg-006-img;}
 
+.content-bg-1 {background-image: $content-bg-001-img;}
+.content-bg-2 {background-image: $content-bg-002-img;}
+
 .body-bg {
 	position: fixed;
 	top: 0;
@@ -1517,7 +1522,7 @@ a {
 }
 .bordered-content {
 	border: 1px solid #DC3F35;
-	padding: 53px 97px;
+	padding: 53px 97px 30px;
 	margin: 36px 20px;
 	h3 {
 		color: #DC3F35;
@@ -1529,6 +1534,26 @@ a {
 	p {
 		line-height: 1.215em;
 	}
+} //bordered-content
+
+blockquote {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-size: 1.4em;
+	p {
+		line-height: 1.4em !important;
+		font-style: italic;
+	}
+	footer {
+		font-size: 0.9em;
+		&:before {
+			display: none;
+		}
+	}
+}
+.about_flag {
+	width: 100%;
 }
 
 // ******************************* White-panel
@@ -1721,6 +1746,9 @@ hr {
 }
 .mb-24 {
 	margin-bottom: 24px !important;
+}
+.mb-25 {
+	margin-bottom: 25px !important;
 }
 .mb-27 {
 	margin-bottom: 27px;
