@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edograd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/libs/gmaps.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiRjBABiqgNoAnAevhAPf04DyPwpPpPqE"type="text/javascript"></script>
+    <script src="js/libs/prettify.js"></script>
+  	<script src="js/libs/rating.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+  <!-- main-header -->
+	<header class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col span_2_of_10">
+					<a href="#" class="logo"><img src="/img/logo.png" alt=""></a>
+				</div>
+				<div class="col span_8_of_10">
+          <div class="row">
+
+            <div class="col span_3_of_12">
+              <!-- search-form -->
+              <form class="search-form" action="index.html" method="post">
+                <input type="text" class="search-input-field" placeholder="Поиск по сайту">
+              </form>
+              <!-- search-from end -->
+            </div>
+            <div class="col span_9_of_12">
+              <div class="overlay"></div>
+              <!-- auth-bar -->
+              <div class="auth-bar">
+                <a href="#" class="sign-in auth-bar-item">Вход</a>
+                /
+                <a href="#" class="sign-up auth-bar-item">Регистрация</a>
+              </div>
+              <!-- auth-bar end -->
+
+              <!-- region-selector -->
+              <div class="city-selector">
+                <a href="#" class="current-city-item">
+                  <span class="current-city-name">Владикавказ</span>
+                </a>
+                <div class="city-selector-panel">
+                  <div class="close-btn"></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ростов-на-Дону</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Пятигорск</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Владикавказ</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Ставрополь</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Махачкала</a></div>
+                  <div class="city-selector-item"><a href="" class="city-selector-link">Грозный</a></div>
+                </div>
+              </div>
+              <!-- region-selector end -->
+
+              <!-- top-nav-bar -->
+              <div class="top-nav-bar">
+                <a href="#" class="top-nav-item">О сервисе</a>
+                /
+                <a href="#" class="top-nav-item">Партнерам</a>
+                /
+                <a href="#" class="top-nav-item">Контакты</a>
+              </div>
+              <!-- top-nav-bar end -->
+
+            </div>
+            <div class="col span_10_of_10 m-0">
+
+              <!-- cart-bar -->
+              <div class="cart-bar">
+                <a href="#" class="cart-bar-link">Заказов в корзине: 15</a>
+              </div>
+              <!-- cart-bar end -->
+
+              <!-- main-nav-bar -->
+              <div class="main-nav-bar">
+                <a href="#" class="main-nav-item">Все заведения</a>
+                <a href="#" class="main-nav-item">На карте</a>
+                <a href="#" class="main-nav-item">Все меню</a>
+                <a href="#" class="main-nav-item">Акции и скидки</a>
+                <a href="#" class="main-nav-item">Доставка и оплата</a>
+              </div>
+              <!-- main-nav-bar end -->
+            </div>
+
+          </div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+  <!-- main-header end -->
+<div class="offers-bg-panel bg-full-panel"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col span_2_of_10">
+			<div class="panel-white mb-30">
+				<div class="panel-white-body text-center">
+					<h4 class="content-sidebar-title">Мы поддерживаем:</h4>
+					<img src="/img/payments/mastercard.png" alt="" class="payment-system-brand">
+					<img src="/img/payments/visa.png" alt="" class="payment-system-brand">
+					<img src="/img/payments/paypal.png" alt="" class="payment-system-brand">
+					<img src="/img/payments/webmon.png" alt="" class="payment-system-brand">
+					<img src="/img/payments/qiwi.png" alt="" class="payment-system-brand">
+					<img src="/img/payments/yandex.png" alt="" class="payment-system-brand">
+				</div>
+			</div>
+		</div>
+
+		<div class="col span_8_of_10">
+
+			<div class="panel-white mb-30">
+				<div class="panel-white-body">
+					<hgroup class="content-hgroup">
+						<h1 class="content-title">Варианты доставки и способы оплаты</h1>
+					</hgroup>
+					<div class="bordered-content">
+						<div class="row">
+							<div class="col span_1_of_2">
+								<h3>Принцип работы доставки и особенности работы с партнерами</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem obcaecati, facilis voluptate, repellat ex molestiae accusantium dignissimos recusandae, a voluptatum error natus odio quaerat culpa similique id sunt eius. Quaerat?</p>
+							</div>
+							<div class="col span_1_of_2">
+								<h3>Оплатить можно наличными или прямо на сайте: множество вариантов перевода на ваш вкус</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam provident ducimus iure ipsa, perspiciatis, animi labore quam itaque voluptatibus beatae, nulla at ex blanditiis minima consequatur perferendis. Vel, repellendus est.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem obcaecati, facilis voluptate, repellat ex molestiae accusantium dignissimos recusandae, a voluptatum error natus odio quaerat culpa similique id sunt eius. Quaerat?</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col span_2_of_10">
+					<img src="/img/logo-light.png" alt="" class="logo">
+					<p class="page-footer-text">Все вкусы города! Агрегатор служб доставки ресторанов и магазинов.<br>Все товары и услуги на этом сайте  реализуются третьей стороной!</p>
+				</div>
+				<div class="col span_3_of_10">
+					<!-- bottom-nav-bar -->
+					<div class="bottom-nav-bar">
+						<a href="#" class="bottom-nav-item">О сервисе</a>
+						/
+						<a href="#" class="bottom-nav-item">Партнерам</a>
+						/
+						<a href="#" class="bottom-nav-item">Контакты</a>
+					</div>
+					<!-- bottom-nav-bar end -->
+					<!-- additional-nav-bar -->
+					<div class="additional-nav-bar">
+						<a href="#" class="additional-nav-item">Рестораны</a>
+						<a href="#" class="additional-nav-item">Магазины</a>
+						<a href="#" class="additional-nav-item">Все меню</a>
+						<a href="#" class="additional-nav-item">На карте</a>
+						<a href="#" class="additional-nav-item">Акции</a>
+						<a href="#" class="additional-nav-item">Доставка и оплата</a>
+					</div>
+					<!-- additional-nav-bar end -->
+				</div>
+				<div class="col span_5_of_10 page-footer-description">
+					<h5 class="page-footer-title">Самый быстрый и самый удобный</h5>
+					<p class="page-footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+</body>
+</html>

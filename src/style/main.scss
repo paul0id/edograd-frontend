@@ -1078,6 +1078,16 @@ a {
 	background-position: center center;
 	z-index: -1;
 }
+.bg-full-panel {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: -1;
+}
 .cart-bg-panel {background-image: $panel-bg-002-img;}
 .order-bg-panel {background-image: $panel-bg-003-img;}
 .profile-bg-panel {background-image: $panel-bg-004-img;}
@@ -1482,6 +1492,44 @@ a {
 	outline: none;
 }
 
+// ******************************* Content page
+
+.payment-system-brand {
+	margin-bottom: 10px;
+}
+.content-sidebar-title {
+	font-size: 1.18em;
+	font-weight: bold;
+	margin: 22px;
+}
+.content-hgroup {
+	text-align: center;
+	margin-bottom: -69px;
+}
+.content-title {
+	text-align: center;
+	font-size: 2.16em;
+	background: #fff;
+	display: inline-block;
+	font-weight: bold;
+	margin: 18px;
+	padding: 0 22px;
+}
+.bordered-content {
+	border: 1px solid #DC3F35;
+	padding: 53px 97px;
+	margin: 36px 20px;
+	h3 {
+		color: #DC3F35;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0px 0 14px;
+    line-height: 1.2em;
+	}
+	p {
+		line-height: 1.215em;
+	}
+}
 
 // ******************************* White-panel
 
