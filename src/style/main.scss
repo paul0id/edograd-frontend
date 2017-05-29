@@ -1431,28 +1431,6 @@ a {
 	}
 } // partners-map-container
 
-.partners-search-label {
-	font-size: 1.14em;
-	display: inline-block;
-	padding: 5px 0;
-	margin: 0;
-}
-.partners-search-input {
-	display: inline-block;
-	font-weight: bold;
-	font-style: normal;
-	padding: 3px 8px;
-	border: 1px solid #dc3f31;
-	width: 100%;
-	font-size: 1.16em;
-}
-.partners-search-button.btn {
-	display: inline-block;
-	float: right;
-	padding: 4px;
-	width: 100%;
-}
-
 .partners-map-card {
 	width: 220px;
 	.images {
@@ -1467,7 +1445,7 @@ a {
 			width: 50%;
 			float: left;
 		}
-	}
+	} // images
 	.partner-title {
 		display: block;
 		margin-bottom: 5px;
@@ -1477,7 +1455,33 @@ a {
 		opacity: 0.8;
     font-size: 0.9em;
 	}
+} //partners-map-card
+
+// ******************************* Search
+.content-search-label {
+	font-size: 1.14em;
+	display: inline-block;
+	padding: 5px 0;
+	margin: 0;
 }
+.content-search-input {
+	display: inline-block;
+	font-weight: bold;
+	font-style: normal;
+	padding: 3px 8px;
+	border: 1px solid #dc3f31;
+	width: 100%;
+	font-size: 1.16em;
+	outline: none;
+}
+.content-search-button.btn {
+	display: inline-block;
+	float: right;
+	padding: 4px 4px 3px;
+	width: 100%;
+	outline: none;
+}
+
 
 // ******************************* White-panel
 
