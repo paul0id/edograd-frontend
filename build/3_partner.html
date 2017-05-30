@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
   	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -17,6 +17,7 @@
   	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiRjBABiqgNoAnAevhAPf04DyPwpPpPqE"type="text/javascript"></script>
     <script src="js/libs/prettify.js"></script>
   	<script src="js/libs/rating.js"></script>
+  	<script src="js/libs/easymodal.js"></script>
     <script src="js/main.js"></script>
 
 </head>
@@ -162,6 +163,7 @@
 	<!-- partner-products-tab -->
 	<div id="partner-products-tab">
 		<div class="container">
+
 			<div class="row">
 				<div class="col span_2_of_10">
 					<div class='panel-white main-sidebar easytabs'>
@@ -896,6 +898,19 @@
 	<!-- partner-about-tab end -->
 
 </div>
+
+<div class="modal-box" id="outoftime_modal">
+	<h3>К сожалению, прямо сейчас NEO не принимает заказы. <br> Вы можете оставить только предварительную заявку.</h3>
+	<p>Время работы: без выходных с 11:00 до 23:00</p>
+	<p>До открытия заведения 5 ч. 24 мин.</p>
+	<div class="modal-box-footer">
+		<a href="" class="order-cancel-btn btn btn-default">Другой ресторан</a>
+		<a href="" class="order-checkout-btn btn btn-primary">Сделать заказ</a>
+	</div>
+</div>
+
+<!-- Документация по модалькам тут http://flaviusmatis.github.io/easyModal.js/ -->
+
 	<footer class="page-footer">
 		<div class="container">
 			<div class="row">

@@ -14,11 +14,11 @@ $content-bg-003-img: url('/img/bg/cont-bg-003.jpg');
 $cart-big-img: url('/img/icons/cart-big.png');
 $close-btn-img: url('/img/icons/close-btn.png');
 $city-selector-img: url('/img/icons/citys.png');
-
 $social-btn-fb: url('/img/social/fb.png');
 $social-btn-inst: url('/img/social/inst.png');
 $social-btn-vk: url('/img/social/vk.png');
 $social-btn-tel: url('/img/social/tel.png');
+$big_clock_ico: url('/img/icons/big_clock.png');
 
 // ** Third Party **
 @import "../../bower_components/normalize.css/normalize";
@@ -1876,4 +1876,34 @@ hr {
 	&.vk {background-image: $social-btn-vk;}
 	&.inst {background-image: $social-btn-inst;}
 	&.tel {background-image: $social-btn-tel;}
+}
+.modal-box {
+	width: 1010px;
+	padding: 36px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+	background-color: white;
+	.modal-box-footer {
+		text-align: right;
+		margin: 26px -26px -26px;
+		.btn {
+			font-size: 1.4em;
+	    margin-left: 7px;
+	    padding: 7px 21px;
+		}
+	}
+}
+#outoftime_modal {
+  padding-left: 260px;
+	background-image: $big_clock_ico;
+	background-position: 94px 60px;
+	background-repeat: no-repeat;
+	background-size: 137px;
+	h3 {
+  	margin-bottom: 32px;
+	}
+	p {
+		font-style: italic;
+		font-size: 1.3em;
+    margin-bottom: 4px;
+	}
 }
