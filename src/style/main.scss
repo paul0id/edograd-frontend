@@ -10,9 +10,15 @@ $body-bg-001-img: url('/img/bg/body-bg-001.jpg');
 $body-bg-002-img: url('/img/bg/body-bg-002.jpg');
 $content-bg-001-img: url('/img/bg/cont-bg-001.jpg');
 $content-bg-002-img: url('/img/bg/cont-bg-002.jpg');
+$content-bg-003-img: url('/img/bg/cont-bg-003.jpg');
 $cart-big-img: url('/img/icons/cart-big.png');
 $close-btn-img: url('/img/icons/close-btn.png');
 $city-selector-img: url('/img/icons/citys.png');
+
+$social-btn-fb: url('/img/social/fb.png');
+$social-btn-inst: url('/img/social/inst.png');
+$social-btn-vk: url('/img/social/vk.png');
+$social-btn-tel: url('/img/social/tel.png');
 
 // ** Third Party **
 @import "../../bower_components/normalize.css/normalize";
@@ -1098,6 +1104,7 @@ a {
 
 .content-bg-1 {background-image: $content-bg-001-img;}
 .content-bg-2 {background-image: $content-bg-002-img;}
+.content-bg-3 {background-image: $content-bg-003-img;}
 
 .body-bg {
 	position: fixed;
@@ -1498,7 +1505,6 @@ a {
 }
 
 // ******************************* Content page
-
 .payment-system-brand {
 	margin-bottom: 10px;
 }
@@ -1556,6 +1562,27 @@ blockquote {
 	width: 100%;
 }
 
+.contact_address {
+	border-bottom: 3px solid #dc3f31;
+	margin: 12px 0;
+	font-size: 1.22em;
+	padding: 0 0 11px;
+
+	.phones {
+		letter-spacing: 0.002em;
+    margin: 19px 0;
+    color: #dc3f31;
+		a {
+			display: inline-block;
+			margin: 0 9px;
+			color: #000;
+			text-decoration: none;
+		} // phones a
+	} // phones
+} // contact_address
+
+
+
 // ******************************* White-panel
 
 .panel-white {
@@ -1573,6 +1600,10 @@ blockquote {
 	h3.panel-primary-title {
 		font-size: 2.17em;
     margin: 18px 0 40px;
+	}
+	h4.panel-secondary-title {
+		font-size: 1.24em;
+    margin: 16px 0 24px;
 	}
 
 	.panel-white-tabs-buttons {
@@ -1747,6 +1778,9 @@ hr {
 .mb-24 {
 	margin-bottom: 24px !important;
 }
+.mt-24 {
+	margin-top: 24px !important;
+}
 .mb-25 {
 	margin-bottom: 25px !important;
 }
@@ -1812,7 +1846,6 @@ hr {
 }
 
 // ****************************** Typography
-
 .info-box {
 	margin-top: 57px;
 	margin-bottom: 75px;
@@ -1826,3 +1859,21 @@ hr {
     line-height: 1.23em;
 	}
 } // info-box
+
+// ****************************** Social buttons
+.social-btn {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	padding: 75px 0 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 46px;
+	&.fb {background-image: $social-btn-fb;}
+	&.vk {background-image: $social-btn-vk;}
+	&.inst {background-image: $social-btn-inst;}
+	&.tel {background-image: $social-btn-tel;}
+}
