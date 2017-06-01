@@ -1,13 +1,10 @@
 $(document).ready(function(){
-
-
-    $('.offers-grid-masonry').masonry({
-      itemSelector: '.full-offer-item',
-      percentPosition: true,
-      // columnWidth: 20,
-      gutter: 20
-    });
-
+  $('.offers-grid-masonry').masonry({
+    itemSelector: '.full-offer-item',
+    percentPosition: true,
+    // columnWidth: 20,
+    gutter: 20
+  });
   $('.main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -54,29 +51,42 @@ $(document).ready(function(){
     $('.city-selector-panel').slideUp(100);
   });
 
-
   // Rating set
   $('.rating-stars-select').rating(function(vote, event){
       $('.feedback-item-rating').val(vote);
   });
+
+  // Checkboxes
+  var styled_checkbox_val = $('.styled_checkbox').attr('data-check');
+  $("." + styled_checkbox_val).hide();
+
+  $('.styled_checkbox').click(function(){
+    $(this).toggleClass('active');
+    var checkBoxes = $(".pickup_checkbox");
+    checkBoxes.prop("checked", !checkBoxes.prop("checked"));
+    $('.delivery-label').toggleClass('disabled');
+    $('.delivery-field').toggleClass('disabled');
+  });
+
+
+
 });
 
+// Modal windows
 $(function() {
-    $('#outoftime_modal').easyModal({
-			top: 200,
-			overlay: 0.2,
-			transitionIn: 'animated bounceInLeft',
-			transitionOut: 'animated bounceOutRight',
-			closeButtonClass: '.animated-close'
-		});
-
-    $('.easy-modal-open').click(function(e) {
-			var target = $(this).attr('href');
-			$(target).trigger('openModal');
-			e.preventDefault();
-		});
-
-		$('.easy-modal-close').click(function(e) {
-			$('.easy-modal').trigger('closeModal');
-		});
+  $('#outoftime_modal').easyModal({
+		top: 200,
+		overlay: 0.2,
+		transitionIn: 'animated bounceInLeft',
+		transitionOut: 'animated bounceOutRight',
+		closeButtonClass: '.animated-close'
+	});
+  $('.easy-modal-open').click(function(e) {
+		var target = $(this).attr('href');
+		$(target).trigger('openModal');
+		e.preventDefault();
+	});
+	$('.easy-modal-close').click(function(e) {
+		$('.easy-modal').trigger('closeModal');
+	});
 });

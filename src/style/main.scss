@@ -19,6 +19,7 @@ $social-btn-inst: url('/img/social/inst.png');
 $social-btn-vk: url('/img/social/vk.png');
 $social-btn-tel: url('/img/social/tel.png');
 $big_clock_ico: url('/img/icons/big_clock.png');
+$minimal-order: url('/img/icons/minimal-order.png');
 
 // ** Third Party **
 @import "../../bower_components/normalize.css/normalize";
@@ -1180,6 +1181,9 @@ a {
 			font-size: 1.3em;
 	    margin-right: 8px;
 	    margin-top: 8px;
+			&.disabled {
+				opacity: 0.2;
+			}
 		} // form-label
 		.form-field {
 			width: 100%;
@@ -1191,7 +1195,39 @@ a {
 				font-style: italic;
 				font-weight: lighter;
 			}
+			&.disabled {
+				background: #c0c0c0;
+				border-color: #c0c0c0;
+				color: #c0c0c0;
+				opacity: 0.2;
+				&::placeholder {
+					color: #c0c0c0;
+				}
+			}
 		} // form-field
+		.styled_checkbox {
+			width: 58px;
+	    height: 39px;
+	    border: 1px solid #b3b3b3;
+			float: right;
+			cursor: pointer;
+			&:before {
+				float: right;
+				position: relative;
+				width: 50%;
+				height: 37px;
+				content: '';
+				background: #b3b3b3;
+				display: block;
+			}
+			&.active {
+				border-color: #dc3f31;
+				&:before {
+					background: #dc3f31;
+					float: left;
+				}
+			}
+		}
 		textarea.form-field {
 			height: 257px;
 			resize: none;
@@ -1424,6 +1460,13 @@ a {
 			float: right;
 			margin-right: 30px;
 		} // order-text
+		.minimal-order-message {
+			padding-left: 60px;
+	    background: $minimal-order 0 0 no-repeat;
+	    font-style: italic;
+	    margin: 3px 0 0 22px;
+	    line-height: 1.3em;
+		}
 	} // order-footer
 
 	.order-date {

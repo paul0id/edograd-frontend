@@ -281,10 +281,19 @@
 						<!-- form-row -->
 						<div class="row form-row">
 							<div class="col span_2_of_8 text-right">
-								<label for="" class="form-label">Адрес доставки – </label>
+								<label for="" class="form-label delivery-label">Адрес доставки – </label>
 							</div>
 							<div class="col span_4_of_8">
-								<input type="text" class='form-field' value="" placeholder="напр. пр. Мира 1, оф. 305">
+								<div class="row">
+									<div class="col span_2_of_3">
+										<input type="text" class='form-field delivery-field' value="" placeholder="напр. пр. Мира 1, оф. 305">
+									</div>
+									<div class="col span_1_of_3">
+										<label for="" class="form-label">Самовывоз</label>
+										<input type="checkbox" name="" value="" class="pickup_checkbox">
+										<div class="styled_checkbox" data-check='pickup_checkbox'></div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<!-- form-row end-->
